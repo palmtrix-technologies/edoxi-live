@@ -188,6 +188,8 @@ class Main extends CI_Controller {
         $result["header_menus"] = $this->mainmodel->display_header_menu();
         $result['casestudies']=$this->mainmodel->getallcasestudy();
         $result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
+        $result["seo"]=$this->mainmodel->get_seo_static_bypage("Case Studies");
+        
         $this->load->view('case-studies', $result);
     }
 
@@ -229,7 +231,9 @@ class Main extends CI_Controller {
         $result["Searchdata"] = $this->mainmodel->GetAllcourse_forsearch();
         $result["header_menus"] = $this->mainmodel->display_header_menu();
         $result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
-		$result['whitepapers']=$this->mainmodel->getallwhitepapers();
+        $result['whitepapers']=$this->mainmodel->getallwhitepapers();
+        $result["seo"]=$this->mainmodel->get_seo_static_bypage("White Paper");
+        
         $this->load->view('white-papers', $result);
     }
 
@@ -260,6 +264,8 @@ class Main extends CI_Controller {
         $result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
         $result["Testimonials"] = $this->mainmodel->getall_coursetestimonial();
         $result["categorys"] = $this->mainmodel->display_category();
+        $result["seo"]=$this->mainmodel->get_seo_static_bypage("Courses");
+       
         
 
         $result["page_type"]="courses";
@@ -275,6 +281,7 @@ class Main extends CI_Controller {
         $result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
         $result["brouchers"] = $this->mainmodel->getallBrouchers();
         
+        $result["seo"]=$this->mainmodel->get_seo_static_bypage("Brochures");
         $this->load->view('brochures', $result);
     }
     

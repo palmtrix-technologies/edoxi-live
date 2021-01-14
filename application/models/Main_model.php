@@ -90,7 +90,7 @@ class main_model extends CI_Model{
 	}
 	public function getbatchesbycourse($id)
 	{
-		$sql="SELECT *,DATE_FORMAT(`StartDate`, '%b %d') as formateddate FROM `ci_course_batches` WHERE   `EndDate` >CURRENT_DATE() and `CourseID`=".$id;
+		$sql="SELECT *,DATE_FORMAT(`StartDate`, '%b %d') as formateddate FROM `ci_course_batches` WHERE   `StartDate` >CURRENT_DATE() and `CourseID`=".$id;
 		
 		
 		$query = $this->db->query($sql);
@@ -395,7 +395,7 @@ where ci_subparents.CategoryId=".$categoryId;
 	  $qry='SELECT tbl_course.course_name,tbl_course.course_slug,DATE_FORMAT(ci_course_batches.StartDate, "%d-%m-%Y ") as date,DAYNAME(ci_course_batches.StartDate)as startday,ci_course_batches.Timeing,ci_course_batches.Batch_pattern FROM `ci_home_upcoming_batches`
 	  inner join ci_course_batches on ci_course_batches.course_batchesID=ci_home_upcoming_batches.BatchID
 	  inner join tbl_course on tbl_course.course_id=ci_course_batches.CourseID
-	  where `EndDate` >CURRENT_DATE();'
+	  where `StartDate` >CURRENT_DATE();'
 	  ;
 	    $query = $this->db->query( $qry);
 
@@ -733,6 +733,17 @@ function getall_studyhub()
 	$query = $this->db->query( $qry);
 
 	return $query->result();
+
+}
+
+
+function get_seo_static_bypage($page)
+{
+	$qry ="SELECT `Page`,`tittle`,`description` as descriptions FROM `ci_seo_static` where Page='".$page."'" ;
+	
+	$query = $this->db->query( $qry);
+
+	return $query->row();
 
 }
 

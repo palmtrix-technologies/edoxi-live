@@ -28,6 +28,7 @@ class Website extends CI_Controller {
 		$result["Searchdata"] = $this->mainmodel->GetAllcourse_forsearch();
 		$result["header_menus"] = $this->mainmodel->display_header_menu();
 		$result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
+		$result["seo"]=$this->mainmodel->get_seo_static_bypage("Contact Us");
 		$this->load->view('contact-us',$result);
 	}
 	public function aboutus()
@@ -35,6 +36,7 @@ class Website extends CI_Controller {
 		$result["Searchdata"] = $this->mainmodel->GetAllcourse_forsearch();
 		$result["header_menus"] = $this->mainmodel->display_header_menu();
 		$result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
+		$result["seo"]=$this->mainmodel->get_seo_static_bypage("About Us");
 		$this->load->view('about-us',$result);
 	}
 
@@ -44,6 +46,7 @@ class Website extends CI_Controller {
 		$result["header_menus"] = $this->mainmodel->display_header_menu();
 		$result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
 		$result["accreditations"] = $this->mainmodel->getall_accreditations();
+		$result["seo"]=$this->mainmodel->get_seo_static_bypage("Accreditations");
 		$this->load->view('accreditations',$result);
 	}
 	public function corporatetraining()
@@ -52,6 +55,7 @@ class Website extends CI_Controller {
 		$result["header_menus"] = $this->mainmodel->display_header_menu();
 		$result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
 		$result["Testimonials"] = $this->mainmodel->get_corporate_testimonials();
+		$result["seo"]=$this->mainmodel->get_seo_static_bypage("Corporate Training Solution");
 		$result["page_type"]="corporate-training";
 		$this->load->view('corporate-training',$result);
 	}
@@ -61,6 +65,7 @@ class Website extends CI_Controller {
 		$result["Searchdata"] = $this->mainmodel->GetAllcourse_forsearch();
 		$result["header_menus"] = $this->mainmodel->display_header_menu();
 		$result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
+		$result["seo"]=$this->mainmodel->get_seo_static_bypage("Resources");
 		$this->load->view('our-resources',$result);
 	}
 
@@ -80,7 +85,7 @@ class Website extends CI_Controller {
 		$result["header_menus"] = $this->mainmodel->display_header_menu();
 		$result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
 		$result["std_search"] = $this->mainmodel->studyhub_search();
-		
+		$result["seo"]=$this->mainmodel->get_seo_static_bypage("Study Hub");
 		$result["recent"] = $this->mainmodel->get_ci_studyhub_recent();
 		$result["popular"] = $this->mainmodel->get_ci_studyhub_popular();
 		$result["recomment"] = $this->mainmodel->get_ci_studyhub_recommented();
@@ -128,6 +133,7 @@ class Website extends CI_Controller {
 		$result["Searchdata"] = $this->mainmodel->GetAllcourse_forsearch();
 		$result["header_menus"] = $this->mainmodel->display_header_menu();
 		$result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
+		$result["seo"]=$this->mainmodel->get_seo_static_bypage("Gallery");
 	$result["page_type"]="gallery";
 		$this->load->view('gallery',$result);
 	}
