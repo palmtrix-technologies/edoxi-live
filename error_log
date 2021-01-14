@@ -1,0 +1,4 @@
+[23-Dec-2020 20:31:19 UTC] PHP Parse error:  syntax error, unexpected '$config' (T_VARIABLE) in /home/productsstore/public_html/edoxi-website/application/config/config.php on line 40
+[23-Dec-2020 20:31:19 UTC] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[23-Dec-2020 20:31:19 UTC] PHP Parse error:  syntax error, unexpected '$config' (T_VARIABLE) in /home/productsstore/public_html/edoxi-website/application/config/config.php on line 40
+[23-Dec-2020 20:31:19 UTC] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="40.827" viewBox="0 0 24 40.827">
+  <g id="tie" transform="translate(-126.712)">
+    <path id="Path_178" data-name="Path 178" d="M138.712,12.98,133.359,16.8a1.392,1.392,0,0,1-1.95-.335l-4.193-5.991a2.785,2.785,0,0,1,.542-3.771l1.628-1.3a1.392,1.392,0,0,1,1.854.1Z" transform="translate(0 -4.626)" fill="#4dbf98"/>
+    <path id="Path_179" data-name="Path 179" d="M256,12.98l5.353,3.824a1.392,1.392,0,0,0,1.95-.335l4.193-5.991a2.785,2.785,0,0,0-.542-3.771l-1.628-1.3a1.392,1.392,0,0,0-1.854.1Z" transform="translate(-117.288 -4.626)" fill="#4dbf98"/>
+    <path id="Path_180" data-name="Path 180" d="M196.306,204.756h-5.569l-3.591,22.621a1.392,1.392,0,0,0,.469,1.275l5,4.286a1.392,1.392,0,0,0,1.812,0l5-4.286a1.392,1.392,0,0,0,.469-1.275Z" transform="translate(-54.809 -192.446)" fill="#4dbf98"/>
+    <g id="Group_235" data-name="Group 235" transform="translate(134.297)">
+      <path id="Path_181" data-name="Path 181" d="M217.258,0h-8.831l4.416,4.416Z" transform="translate(-208.427)" fill="#4dbf98"/>
+      <path id="Path_182" data-name="Path 182" d="M220.387,129.228l.521,2.084h5.569l.521-2.084-3.305-2.361Z" transform="translate(-219.277 -115.092)" fill="#4dbf98"/>
+    </g>
+  </g>
+</svg>
