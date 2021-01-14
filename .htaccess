@@ -1,8 +1,49 @@
+<IfModule mod_rewrite.c>
 RewriteEngine on
 # RewriteBase /edoxi-website
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L]
+
+Redirect 301	/az-900-microsoft-azure-fundamentals	/microsoft-azure-fundamentals-training
+Redirect 301	/az-103-microsoft-azure-administrator	/microsoft-azure-administrator-training
+Redirect 301	/az-500-microsoft-azure-security-technologies	/microsoft-azure-security-technologies-training
+Redirect 301	/az-301-microsoft-azure-architect-design	/microsoft-azure-architect-design-training
+Redirect 301	/az-300-microsoft-azure-architect-technologies	/microsoft-azure-architect-technologies-training
+Redirect 301	/az-203-developing-solutions-for-microsoft-azure	/developing-solutions-for-microsoft-azure-training
+Redirect 301	/az-400-microsoft-azure-devops-solutions	/microsoft-azure-devops-solutions-training
+Redirect 301	/az-203t06-connect-to-and-consume-azure-and-third-party-services	/microsoft-azure-courses
+Redirect 301	/az-300t04-a-creating-and-deploying-apps	/microsoft-azure-courses
+Redirect 301	/az-300t01-deploying-configuring-infrastructure	/microsoft-azure-courses
+Redirect 301	/az-301t02-a-designing-a-data-platform-solution	/microsoft-azure-courses
+Redirect 301	/az-400t07-designing-a-devops-strategy	/microsoft-azure-courses
+Redirect 301	/az-301t04-designing-an-infrastructure-strategy	/microsoft-azure-courses
+Redirect 301	/az-301t03-designing-for-deployment-migration-and-integration	/microsoft-azure-courses
+Redirect 301	/az-301t01-designing-for-identity-and-security	/microsoft-azure-courses
+Redirect 301	/az-203t01-develop-azure-infrastructure-as-a-service-compute-solutions	/microsoft-azure-courses
+Redirect 301	/az-203t02-develop-azure-platform-as-a-service-compute-solutions	/microsoft-azure-courses
+Redirect 301	/az-200t02-develop-for-azure-storage	/microsoft-azure-courses
+Redirect 301	/az-300t06-developing-for-the-cloud	/microsoft-azure-courses
+Redirect 301	/az-203t03-implement-microsoft-azure-security	/microsoft-azure-courses
+Redirect 301	/az-400t05-implementing-application-infrastructure	/microsoft-azure-courses
+Redirect 301	/az-400t03-implementing-continuous-delivery	/microsoft-azure-courses
+Redirect 301	/az-400t06-implementing-continuous-feedback	/microsoft-azure-courses
+Redirect 301	/az-400t02-implementing-continuous-integration	/microsoft-azure-courses
+Redirect 301	/az-400t04-implementing-dependency-management	/microsoft-azure-courses
+Redirect 301	/az-400t01-implementing-devops-development-processes	/microsoft-azure-courses
+Redirect 301	/az-300t02-implementing-workloads-and-security	/microsoft-azure-courses
+Redirect 301	/az-203t05-monitor-troubleshoot-and-optimize-azure-solutions	/microsoft-azure-courses
+Redirect 301	/az300t03-understanding-cloud-architect-technology-solutions	/microsoft-azure-courses
+Redirect 301	/blog	/studyhub
+Redirect 301	/blog_details/how-to-benefit-with-human-resource-management-courses-in-dubai	/studyhub-detail/how-do-you-benefit-from-studying-a-human-resource-management-course
+Redirect 301	/blog_details/effective-business-communication-skills-training-in-dubai	/studyhub-detail/how-to-improve-your-business-writing-skills
+Redirect 301	/blog_details/which-course-is-best-for-getting-job-in-dubai-capably	/studyhub-detail/10-best-careers-for-human-resource-management-professionals-in-dubai
+Redirect 301	/blog_details/how-to-become-a-strategic-hr-professional	/studyhub-detail/6-simple-ways-to-become-a-successful-hr-professional
+Redirect 301	/blog_details/IELTS-Test-Takers-Prize-2020	/studyhub
+Redirect 301	/Sales-and-Marketing-Course	/certified-sales-and-marketing-course
+Redirect 301	/category/management-courses-in-dubai	/category/administration-and-secretarial-courses-in-dubai
+</IfModule>
+
 
 # BEGIN cPanel-generated php ini directives, do not edit
 # Manual editing of this file may result in unexpected behavior.

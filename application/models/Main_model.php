@@ -726,6 +726,16 @@ function getall_accreditations()
 
 }
 
+function getall_studyhub()
+{
+	$qry ="SELECT `Tittle`,`slug` FROM `ci_studyhub`" ;
+	
+	$query = $this->db->query( $qry);
+
+	return $query->result();
+
+}
+
 
 }
 ?>

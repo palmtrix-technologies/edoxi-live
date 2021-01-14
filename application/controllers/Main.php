@@ -191,6 +191,18 @@ class Main extends CI_Controller {
         $this->load->view('case-studies', $result);
     }
 
+    public function sitemap()
+	{
+        $result["Searchdata"] = $this->mainmodel->GetAllcourse_forsearch();
+        $result["header_menus"] = $this->mainmodel->display_header_menu();
+        $result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
+        $result["categorys"] = $this->mainmodel->display_category();
+        $result["studyhubs"] = $this->mainmodel->getall_studyhub();
+        $result["whitepapers"] = $this->mainmodel->getallwhitepapers();
+        $result["casestudies"] = $this->mainmodel->getallcasestudy();
+        $this->load->view('sitemap', $result);
+    }
+
     public function casestudydetails($slug)
 	{
         

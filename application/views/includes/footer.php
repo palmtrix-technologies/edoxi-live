@@ -44,6 +44,7 @@ Dubai United Arab Emirates</p></div>
 <li><a href='<?=base_url();?>case-studies'>Case Studies</a></li>
 <li><a href='<?=base_url();?>study-hub'>Study Hub</a></li>
 <li><a href='<?=base_url();?>contact-us'>Contact Us</a></li>
+<li><a href='<?=base_url();?>sitemap'>Sitemap</a></li>
 </ul>
 </div>
 

@@ -196,7 +196,7 @@ echo '<script type="application/ld+json">
 {
   "@context": "http://www.schema.org",
   "@type": "EducationEvent",
-  "name": "'.$coursedata->course_name.'",
+  "name": "'.$coursedata->course_name.' course",
   "url": "'.base_url().$coursedata->course_slug.'",
   "description": "'.$coursedata->course_meta_description.'",
   "startDate": "'.$startd.'",

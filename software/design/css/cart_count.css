@@ -1,0 +1,15 @@
+.cart_count{    position: absolute;
+    top: -17px;
+    right: 13%;
+    background: #626271;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    left: -25px;
+    
+}
+
+
+    .prodect-num{position: relative;}
