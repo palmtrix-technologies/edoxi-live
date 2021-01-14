@@ -155,8 +155,29 @@ else{
 {"@context":"http://www.schema.org",
 "@type":"product","brand":"Edoxi Training Institute Dubai","name":"Edoxi Training Institute Dubai",
 "aggregateRating":{"@type":"aggregateRating","url":"https://www.google.com.au/search?biw=1366&bih=621&ei=sWzfXfrpNsj1rQH6nYHgAQ&q=edoxi+training+institute&oq=edoxi+tra&gs_l=psy-ab.3.0.0l9.85873.87997..89463...0.0..0.336.2808.0j1j9j1......0....1..gws-wiz.......0i67j0i10j0i131i273j0i131j0i273j0i3.3dO_3oc9bHQ#lrd=0x3e5f43a3936c24bb:0x71a3463c8e4c9b63,1,,,",
-"ratingValue":"4.9/5","reviewCount":"274"}}
+"ratingValue":"4.9/5","reviewCount":"485"}}
 </script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2888493188088859');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2888493188088859&ev=PageView&noscript=1"
+/></noscript>
+<!-- tidio -->
+<script src="//code.tidio.co/lvtupatdowbgjx5su5cnvbnxhot0xgde.js" async></script>
+
+
 
 </body>
 </html>

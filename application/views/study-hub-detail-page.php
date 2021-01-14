@@ -62,10 +62,11 @@ if($sections->Classname!="Normal")
 <p class="name"><img src="../assets/images/user-icon-orange.svg" alt="article1" width="10" height="14"><a href="../studyhub/author/<?=$studyhub->author_slug;?>"><?=$studyhub->Author_name;?></a></p>
 </div>
 <div class="writer-details">
-<img src="<?=base_url().'admin/assets/img/studyhub/'.$studyhub->profile_image;?>" alt="article1" width="140" height="150">
+
 <div class="name-description">
-<p class="name"><?=$studyhub->Author_name;?></p>
-<p class="description"><?=$studyhub->profile;?></p>
+
+<p class="name"><img src="../assets/images/user-icon-orange.svg" alt="article1" width="10" height="14"><a href=""><?=$studyhub->Author_name;?></a></p>
+<p class="description"><img src="<?=base_url().'admin/assets/img/studyhub/'.$studyhub->profile_image;?>" alt="article1" width="140" height="150"><?=$studyhub->profile;?></p>
 </div>
 </div>
 </div>

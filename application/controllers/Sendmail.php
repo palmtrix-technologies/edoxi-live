@@ -127,12 +127,17 @@ public function sendEmail($email,$subject,$message,$attched_file)
         $result["header_menus"] = $this->mainmodel->display_header_menu();
         $result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
         $result["datas"]=$data2;
+        $result["page"]="";
+        // $this->load->view('includes/header',$result);
+        $this->load->view('enquiry-success');
         if($type=="contact")
         {
             $this->load->view('form-messages/contact-us-success', $result);
         }
         else if($type=="call-back"){
+           
             $this->load->view('form-messages/request-callback-success', $result);
+           
         }
 
         else if($type=="corporate-booking"){
@@ -147,6 +152,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
             $this->load->view('form-messages/corporate-enquiry-success', $result);
         }
         
+        // $this->load->view('includes/footer');
         
             
     }

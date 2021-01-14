@@ -1,7 +1,7 @@
 <?php $page='study-hub'; ?>
 <?php include('includes/header.php') ?>
 
-<div class="study-hub subpage">
+<div class="study-hub author-page subpage">
 <div class="subpage-title">
 <h1 class="h1 page-title">Study Hub</h1>
 </div>
@@ -20,7 +20,7 @@
 <div class="search-box">
 <form action="" class="form">
   <input type="text" placeholder="Search here" name="search" class="search-field">
-  <button type="submit" class="search-button"><img src="../../assets/images/search-icon.svg" width="22" height="24" alt="Search Icon" class="search-icon"/></button>
+  <button type="submit" class="search-button"><img src="<?=base_url();?>assets/images/search-icon-blue.svg" width="22" height="24" alt="Search Icon" class="search-icon"/></button>
 </form>
 </div>
 </div>
@@ -30,7 +30,7 @@
 <section>
 <div class="container">
 <div class="article-lists">
-<h2 class="h2 heading author-name"><?=$author->Author_name;?></h2>
+<h2 class="h2 heading author-name"><a href=""><?=$author->Author_name;?></a></h2>
 <div class="lists">
 
 
@@ -39,7 +39,7 @@
 <a href="<?=base_url().'studyhub-detail/'.$populars->slug?>">
 <img src="<?=base_url().'admin/assets/img/studyhub/'.$populars->image;?>" class="img" alt="<?=$populars->image_alt?>" width="380" height="195">
 <div class="details-block">
-<p class="writer"><img src="../../assets/images/user-icon-orange.svg" alt="article1" width="10" height="14"><?=$populars->Author_name?></p>
+<p class="writer"><img src="<?=base_url();?>assets/images/user-icon-orange.svg" alt="article1" width="10" height="14"><?=$populars->Author_name?></p>
 <h3 class="h3 heading"><?=$populars->Tittle?></h3>
 <p class="p"><?=$populars->ShortDescription?></p>
 </div>
