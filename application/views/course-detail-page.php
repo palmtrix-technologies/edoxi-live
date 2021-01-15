@@ -152,6 +152,7 @@ if($sections->Classname!="Normal")
 
 <?php  if(isset($faq)&&count($faq)>0){ 
     echo '<script type="application/ld+json">
+    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [';
