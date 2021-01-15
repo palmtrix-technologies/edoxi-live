@@ -176,11 +176,11 @@ class Course extends MY_Controller
 		$cc=$postdata["cc"];
 		$result= $this->Course_model->delete_coursecategory($id);
 		
-		foreach	($cc as $cat)
+		foreach	($data as $cat)
 		{
 
 			
-			$result= $this->Course_model->updatecoursecat($id,$cat);
+			$result= $this->Course_model->updatecoursecat($id,$cat->Subcatparentid);
 		}
 		
 		echo $result;
