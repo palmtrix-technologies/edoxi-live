@@ -329,6 +329,7 @@ function Addcategorycourses(courseId)
       contents=select_cat;
     }
     var cv=[];
+    console.log(contents);
     for(i=0; i < contents.length; i++){
      
          var Sectionslist={

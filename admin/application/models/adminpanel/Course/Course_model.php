@@ -132,6 +132,7 @@ class Course_model extends CI_Model{
 	}
 	public function get_coursecategory_byid($id)
 	{
+		
 		$sql="SELECT * FROM `coursecategory` where `CourseId`=".$id;
 		
 		
@@ -166,6 +167,9 @@ class Course_model extends CI_Model{
 	public function updatecoursecat($id,$fkey)
 	{
 		$sql="INSERT INTO `coursecategory`(`CourseId`, `Subcatparentid`, `CategoryID`, `SubcategoryID`) select ".$id.", ".$fkey.",ci_subparents.CategoryId,ci_subparents.SubCategoryId from ci_subparents where ci_subparents.subparent_Id=".$fkey;
+		
+		var_dump($sql);
+		die();
 		
 		
 		
