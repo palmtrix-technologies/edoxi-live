@@ -178,7 +178,8 @@ class Course extends MY_Controller
 		
 		foreach	($data as $cat)
 		{
-
+			var_dump($cat);
+			die();
 			
 			$result= $this->Course_model->updatecoursecat($id,$cat->Subcatparentid);
 		}
