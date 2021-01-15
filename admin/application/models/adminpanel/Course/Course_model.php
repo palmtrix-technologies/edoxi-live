@@ -168,7 +168,8 @@ class Course_model extends CI_Model{
 	{
 		$sql="INSERT INTO `coursecategory`(`CourseId`, `Subcatparentid`, `CategoryID`, `SubcategoryID`) select ".$id.", ".$fkey.",ci_subparents.CategoryId,ci_subparents.SubCategoryId from ci_subparents where ci_subparents.subparent_Id=".$fkey;
 		
-		
+		var_dump($sql);
+		die();
 		
 		
 		
