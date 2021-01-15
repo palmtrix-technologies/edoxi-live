@@ -30,9 +30,9 @@
 </div>
 
 </form>
-<p class="btn-wrapper"><input type="submit" onClick="validation();"  value="Submit" id="rcsubmit" class="btn yellow-bg"></p>
+<p class="btn-wrapper"><input type="submit" onClick="validationrc();"  value="Submit" id="rcsubmit" class="btn yellow-bg"></p>
 <script>
-function validation() {
+function validationrc() {
 
 // checking all fields are null
 let inputs = document.getElementsByClassName('rcinput');
