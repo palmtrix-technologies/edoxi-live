@@ -175,7 +175,7 @@ class Course extends MY_Controller
 		$id=$postdata["id"];
 		$cc=$postdata["cc"];
 		$result= $this->Course_model->delete_coursecategory($id);
-		var_dump($data);
+		var_dump($postdata);
 		die();
 		foreach	($data as $cat)
 		{
