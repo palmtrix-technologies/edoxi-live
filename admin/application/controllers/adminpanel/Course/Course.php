@@ -179,7 +179,7 @@ class Course extends MY_Controller
 		foreach	($data as $cat)
 		{
 			
-			$result= $this->Course_model->updatecoursecat($id,$cat->Subcatparentid);
+			$result= $this->Course_model->updatecoursecat($id,$cat);
 		}
 		
 		echo $result;
