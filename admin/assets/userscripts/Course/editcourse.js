@@ -336,7 +336,7 @@ function Addcategorycourses(courseId)
              "CourseId":courseId,
              "Subcatparentid": contents[i]
             }
-            cv.push(Sectionslist); 
+            cv.push(contents[i]); 
      } 
  
      var postData = {
