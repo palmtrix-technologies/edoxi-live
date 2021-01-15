@@ -128,12 +128,14 @@
 
 var lis = document.getElementById("test").getElementsByClassName("parent");
 
+var listdata=lis;
 var j;
 var mode;
-for (j = 0; j < lis.length; j++) {
+var length=listdata.length;
+for (j = 0; j <length ; j++) {
  mode=(j%3);
-
- document.getElementById("ul"+mode).appendChild(lis[j]); 
+ 
+ document.getElementById("ul"+mode).appendChild(listdata[0]); 
 }
 
 </script>
