@@ -5,7 +5,7 @@
 
 <form id="form1" class="request-callback-form" action="<?=base_url();?>send-enquiry" method="post"  onsubmit="validation();" novalidate>
 <div class="input-container">
-<input type="text" name="name" placeholder="Name" class="input" id="rcinput" >
+<input type="text" name="name" placeholder="Name" class="rcinput" id="rcname" >
 <div class='validation'>Please enter the Name</div>
 <div class='validation'>Numbers not allowed in Name Field</div>
 </div>
