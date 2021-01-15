@@ -156,7 +156,12 @@ if($sections->Classname!="Normal")
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [';
+      $count=0;
       foreach($faq as $faqs){
+       if($count!-0)
+       {
+         echo ',';
+       }
      $tittle=str_replace('"', "'", $faqs->faq_title);
      $desc=str_replace('"', "'", strip_tags($faqs->faq_description));
       echo '{
@@ -166,7 +171,8 @@ if($sections->Classname!="Normal")
           "@type": "Answer",
           "text": "'.$desc.'"
         }
-      },';
+      }';
+      $count++;
       }
       
       echo '] }
