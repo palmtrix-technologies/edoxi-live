@@ -3,6 +3,7 @@
 .show {height: auto; opacity: 1; top: 0;margin-bottom: 0; margin-top: .5rem;}
 </style>
 
+
 <form id="course-enquiry-form" action="<?=base_url();?>send-enquiry" method="post" name="myform" class="form-container" onsubmit="validation(); return false" novalidate>
 <div class="input-container">
 <input type="text" name="name" placeholder="Name" id="name" class="input">
