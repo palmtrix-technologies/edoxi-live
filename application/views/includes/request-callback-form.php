@@ -1,6 +1,6 @@
 <style>
- .validation {margin-left:10px;transition:all 0.3s linear 0s;position:relative;top:-3px;height:0;overflow:hidden;opacity: 0; color:#FD6F01;font-size: 14px;}   
- .show {height:auto;opacity:1;top:0;margin-bottom: 15px}
+.validation {transition:all 0.3s linear 0s;position:relative;top:-3px;height:0;overflow:hidden;opacity: 0; color:#ffda23;font-size: 14px;}
+.show {height: auto; opacity: 1; top: 0;margin-bottom: 0; margin-top: .5rem;}
 </style>
 
 <form id="form1" class="request-callback-form" action="<?=base_url();?>send-enquiry" method="post"  onsubmit="validation();" novalidate>
@@ -23,7 +23,7 @@
 </div>
 <div class="input-container">
 <input type="text" name="interest" class="input" placeholder="Interested In" id="interest" required="required">
-<div class='validation'>Please enter </div>
+<div class='validation'>Please enter  </div>
 <input type="hidden" name="message"   id="message">
 <input type="hidden" name="companyname" id="companyname">
 <input type="hidden" name="eng_type" value="call-back">	
