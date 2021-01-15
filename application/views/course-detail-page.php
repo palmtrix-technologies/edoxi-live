@@ -158,7 +158,7 @@ if($sections->Classname!="Normal")
       "mainEntity": [';
       $count=0;
       foreach($faq as $faqs){
-       if($count!-0)
+       if($count!=0)
        {
          echo ',';
        }
