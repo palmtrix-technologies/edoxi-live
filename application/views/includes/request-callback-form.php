@@ -5,24 +5,24 @@
 
 <form id="form1" class="request-callback-form" action="<?=base_url();?>send-enquiry" method="post"  onsubmit="validation();" novalidate>
 <div class="input-container">
-<input type="text" name="name" placeholder="Name" class="input" id="rcname" >
+<input type="text" name="name" placeholder="Name" class="input" id="rcinput" >
 <div class='validation'>Please enter the Name</div>
 <div class='validation'>Numbers not allowed in Name Field</div>
 </div>
 <div class="input-container">
-<input type="email" name="email" placeholder="E-mail" id="rcemail" class="input" required="required">
+<input type="email" name="email" placeholder="E-mail" id="rcemail" class="rcinput" required="required">
 <div class='validation'>Please enter the Email</div>
 <div class='validation'>Please enter a valid email</div>
 </div>
 <div class="input-container phone">
 <input type="text" name="countrycode" placeholder="+971" class="phone-number">
-<input type="text" name="phone" placeholder="Phone Number"  id="rcphonenumber" class="phone-number input">
+<input type="text" name="phone" placeholder="Phone Number"  id="rcphonenumber" class="phone-number rcinput">
 <div class='validation'>Please enter the Phone number</div>
 <div class='validation'>Please enter a valid Phone number</div>
 <div class='validation'>Please enter a valid Phone number</div>
 </div>
 <div class="input-container">
-<input type="text" name="interest" class="input" placeholder="Interested In" id="interest" required="required">
+<input type="text" name="interest" class="rcinput" placeholder="Interested In" id="rcinterest" required="required">
 <div class='validation'>Please enter  </div>
 <input type="hidden" name="message"   id="message">
 <input type="hidden" name="companyname" id="companyname">
@@ -35,7 +35,7 @@
 function validation() {
 
 // checking all fields are null
-let inputs = document.getElementsByClassName('input');
+let inputs = document.getElementsByClassName('rcinput');
 for(i=0;i<inputs.length;i++) {
 if(inputs[i].value===''){
 inputs[i].nextElementSibling.classList.add('show');
