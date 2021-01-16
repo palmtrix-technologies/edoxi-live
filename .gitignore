@@ -7,7 +7,13 @@
 
 #database & htaccess
 /application/config/*
+/application/config/
+application/config/*
+application/config/
+/application/config/database.php
+application/config/database.php
 /.htaccess
+.htaccess
 
 
 #node modules
