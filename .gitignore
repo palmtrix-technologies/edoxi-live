@@ -5,7 +5,7 @@
 !*/cache/index.html
 !*/cache/.htaccess
 
-#database & htaccess
+#database - htaccess - robots.txt
 /application/config/*
 /application/config/
 application/config/*
@@ -14,7 +14,8 @@ application/config/
 application/config/database.php
 /.htaccess
 .htaccess
-
+/robots.txt
+robots.txt
 
 #node modules
 /node_modules
