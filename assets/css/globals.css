@@ -18,7 +18,7 @@ html {font-size: 1.45rem;}
 body, ul, p {font-family:'roboto';padding: 0;margin: 0;list-style: none;color:#666;}
 a {transition:all 0.35s ease 0s;text-decoration: none;color: #666;font-size: .9rem;}
 h1,h2,h3,h4,h5,h6,p {margin:0;padding:0;}
-img {max-width:100%;height:auto;image-rendering: optimizespeed;}
+img {max-width:100%;height:auto;image-rendering: optimizespeed; aspect-ratio: attr(width) / attr(height);}
 
 /* Containers */
 section {padding-top: 3rem;padding-bottom: 3rem;}

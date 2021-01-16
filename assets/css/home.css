@@ -213,6 +213,7 @@
 	position: relative;
 	transition-property: transform;
 	display: flex;
+	height: 25rem;
 }
 .swiper-slide-invisible-blank {
 	visibility: hidden;
@@ -673,7 +674,6 @@ button.swiper-pagination-bullet {
 	color: #fff;
 	z-index: 10;
 	text-align: center;
-	height: auto;
 	font-weight: normal;
 	font-size: 1.5rem;
 	position: absolute;
@@ -683,6 +683,7 @@ button.swiper-pagination-bullet {
 	text-align: left;
 	padding: 1rem;
 	bottom: 5rem;
+	height: 17rem;
 }
 .swiper-slide .caption-wrapper .h2 {
 	font-size: 1.85rem;
