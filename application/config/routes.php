@@ -53,6 +53,8 @@ $route['default_controller'] = 'website';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['python-training-course-in-dubai']='Main/schemachecker';
+
 $route['search'] = 'Main/search';
 $route['sitemap'] = 'Main/sitemap';
 $route['about-us'] = 'website/aboutus';
