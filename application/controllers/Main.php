@@ -321,6 +321,33 @@ class Main extends CI_Controller {
     $data['batches']=$this->mainmodel->getbatchesbycourse($id);
     $data['faq']=$this->mainmodel->getfaqbycourse($id);
     $data['dummydate']=$this->mainmodel->getdummy_date();
+    $data['temp']=1;
+    
+    $this->load->view('schemachecker/course-detail-page', $data);
+   }
+
+   public function schemachecker1()
+   {
+    $dataval=$this->mainmodel->Getslugdetails("autocad-2d-training-course-in-dubai");  
+  
+    $id=$dataval->dataid;;
+    
+    $datas=$this->mainmodel->getcoursebyid($id);
+   
+    $data["seo"]=$this->mainmodel->get_seo_course($id);
+    $data["Searchdata"] = $this->mainmodel->GetAllcourse_forsearch();
+    $data["header_menus"] = $this->mainmodel->display_header_menu();
+    $data["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
+    $data['Coursecategory']=$this->mainmodel->get_coursecategory_byid($id);
+    $data['courseaccrediations']=$this->mainmodel->getaccreditationsbycourse($id);
+    $data['relatedcourses']=$this->mainmodel->getrelatedcoursesbid($id);
+    $data["coursedata"]= $datas;
+    $data['categoryimage']=$this->mainmodel->get_courseimage_byid($datas->ImageID);
+    $data['categorysections']=$this->mainmodel->get_coursesections_byid($id);
+    $data['batches']=$this->mainmodel->getbatchesbycourse($id);
+    $data['faq']=$this->mainmodel->getfaqbycourse($id);
+    $data['dummydate']=$this->mainmodel->getdummy_date();
+    $data['temp']=2;
     
     $this->load->view('schemachecker/course-detail-page', $data);
    }
