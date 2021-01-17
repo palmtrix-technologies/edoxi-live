@@ -187,8 +187,8 @@ if(isset($batches)&&count($batches)>0){
 
   foreach($batches as $batch){
 
-    $startd=$batch->StartDate."T09:00:00";
-  $endd=$batch->EndDate."T18:00:00";
+    $startd=$batch->StartDate."T09:00:00+04:00";
+  $endd=$batch->EndDate."T18:00:00+04:00";
   echo '<script type="application/ld+json"> 
   {
     "@context": "http://www.schema.org",
