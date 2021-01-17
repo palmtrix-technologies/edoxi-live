@@ -289,7 +289,7 @@ else{
   {"@type":"aggregateRating",
   "url":"https://www.google.com.au/search?biw=1366&bih=621&ei=sWzfXfrpNsj1rQH6nYHgAQ&q=edoxi+training+institute&oq=edoxi+tra&gs_l=psy-ab.3.0.0l9.85873.87997..89463...0.0..0.336.2808.0j1j9j1......0....1..gws-wiz.......0i67j0i10j0i131i273j0i131j0i273j0i3.3dO_3oc9bHQ#lrd=0x3e5f43a3936c24bb:0x71a3463c8e4c9b63,1,,,",
     "ratingValue":"4.9/5",
-    "reviewCount":"485"}
+    "reviewCount":"485"},
 
   "description": "Learn AutoCAD 2D Course to create 2D designs from concept to construction with our expert-led training from our Authorised Autodesk Training Centre in Dubai.",
   "name": "AutoCAD 2D Training in Dubai",
