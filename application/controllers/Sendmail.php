@@ -149,7 +149,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
                 <th>Enquiry Date time </th><th>'.date("Y-m-d h:i:sa").'</th>
                 </tr>
             </table>';
-        $this->sendEmail_withoutattachment("New Enquiry -".$type,$messages)
+        $this->sendEmail_withoutattachment("New Enquiry -".$type,$messages);
         $result["Searchdata"] = $this->mainmodel->GetAllcourse_forsearch();
         $result["header_menus"] = $this->mainmodel->display_header_menu();
         $result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
