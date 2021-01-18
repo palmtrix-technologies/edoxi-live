@@ -461,7 +461,7 @@ section figure {margin-top:2rem;margin-bottom:2rem;}
 
 /*Text Colors*/
 .blue-text {color:#0454A1;}
-.yellow-text {color:#ffda23;}
+.yellow-text {color:#ffda23;width: 100%;}
 .orange-text {color: #FF6C2B !important;}
 .orange-text a {color: #FF6C2B !important;}
 .gray-text {color: #888;}
