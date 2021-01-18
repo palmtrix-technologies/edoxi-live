@@ -156,7 +156,7 @@
 $(document).ready(function() {
     $('.exampletab').DataTable( {
         dom: 'Bfrtip',
-        "pageLength": 50
+        "pageLength": 100,
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]

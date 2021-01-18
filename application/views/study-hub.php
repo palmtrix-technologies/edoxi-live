@@ -202,7 +202,8 @@ document.getElementById("autocomplete-results_s_hub").addEventListener("click", 
       // List item found!  Output the value!
       console.log(e.target.innerHTML);
 	  search_input_s_hub.value = e.target.innerHTML;
-	  document.getElementById("search-btn").href="studyhub-detail/"+e.target.id; 
+	  // document.getElementById("search-btn").href="studyhub-detail/"+e.target.id; 
+    window.location.href ="studyhub-detail/"+e.target.id; 
       autocomplete_results_s_hub.innerHTML = null; //empty the value
     }
   });
