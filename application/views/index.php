@@ -58,7 +58,7 @@
 <picture>
 <source media="(min-width: 768px)" srcset="assets/images/revit-architecture-lg.webp" >
 <source media="(min-width: 480px)" srcset="assets/images/revit-architecture-md.webp" >
-<img src="assets/images/revit-architecture-xs.webp" alt="revit-architecture" class="img hero-slider-image" width="360" height="460">
+<img src="assets/images/revit-architecture-xs.webp" alt="revit-architecture" class="img hero-slider-image" width="480" height="640">
 </picture>	
 </div>
 <div class="swiper-slide home-slider-slide">
@@ -71,7 +71,7 @@
 <picture>
 <source media="(min-width: 768px)" srcset="assets/images/ethical-hacking-lg.webp" >
 <source media="(min-width: 480px)" srcset="assets/images/ethical-hacking-md.webp" >
-<img src="assets/images/ethical-hacking-xs.webp" alt="ethical-hacking" class="img hero-slider-image" width="360" height="460">
+<img src="assets/images/ethical-hacking-xs.webp" alt="ethical-hacking" class="img hero-slider-image" width="480" height="640">
 </picture>	
 </div>
 </div>
