@@ -123,7 +123,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
         );  
         $result= $this->mainmodel->add_enquiry_log($data2);
         $messages = '
-            <table style="border-color: #666;" cellpadding="10">
+            <table style="border: solid black 1px;" cellpadding="10">
                 <tr>
                 <th>Enquiry Type </th><th>'.$type.'</th>
                 </tr>
@@ -205,7 +205,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
           $this->load->library('email', $config);
           $this->email->set_newline("\r\n");
           $this->email->from('enquiry@edoxitraining.com');
-          $this->email->to('hakkempalakkal@gmail.com');
+          $this->email->to('info@edoxitraining.com');
           $this->email->subject($subject);
           $this->email->message($message);
           if($this->email->send())
