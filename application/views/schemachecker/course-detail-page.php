@@ -193,7 +193,7 @@ if(isset($batches)&&count($batches)>0){
   {
     "@context": "http://www.schema.org",
     "@type": "EducationEvent",
-    "name": "'.$coursedata->course_name.' course",
+    "name": "'.$coursedata->course_name.' Training Course",
     "url": "'.base_url().$coursedata->course_slug.'",
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
