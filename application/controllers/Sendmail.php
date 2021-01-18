@@ -84,7 +84,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
 
           $this->load->library('email', $config);
           $this->email->set_newline("\r\n");
-          $this->email->from('info@edoxitraing.com');
+          $this->email->from('info@edoxitraining.com');
           $this->email->to($email);
           $this->email->subject($subject);
           $this->email->message($message);
