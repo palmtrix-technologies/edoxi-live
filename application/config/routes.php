@@ -54,6 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['python-training-course-in-dubai']='Main/schemachecker';
+$route['autocad-2d-training-course-in-dubai']='Main/schemachecker1';
 
 $route['search'] = 'Main/search';
 $route['sitemap'] = 'Main/sitemap';

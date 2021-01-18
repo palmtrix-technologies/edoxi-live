@@ -187,9 +187,33 @@ if(isset($batches)&&count($batches)>0){
 
   foreach($batches as $batch){
 
-    $startd=$batch->StartDate." 09:00:00";
-  $endd=$batch->EndDate." 18:00:00";
-    break;
+    $startd=$batch->StartDate."T09:00:00+04:00";
+  $endd=$batch->EndDate."T18:00:00+04:00";
+  echo '<script type="application/ld+json"> 
+  {
+    "@context": "http://www.schema.org",
+    "@type": "EducationEvent",
+    "name": "'.$coursedata->course_name.' course",
+    "url": "'.base_url().$coursedata->course_slug.'",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+    "description": "'.$coursedata->course_meta_description.'",
+    "startDate": "'.$startd.'",
+    "endDate": "'.$endd.'",
+    "location": {
+      "@type": "Place",
+      "name": "Edoxi Training Institute ",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office 504, Bank Street Building Next to Burjuman Metro Station Exit 3 - Khalid Bin Al Waleed Rd ",
+        "addressLocality": "Burjuman",
+        "addressRegion": "dubai",
+        "postalCode": "122002",
+        "addressCountry": "United Arab Emirates"
+      }
+    }
+  }
+   </script>';
   }
 
 }
@@ -197,14 +221,14 @@ else{
   $startd=$dummydate->startdate;
   $endd=$dummydate->enddate;
 
-}
-
-echo '<script type="application/ld+json"> 
+  echo '<script type="application/ld+json"> 
 {
   "@context": "http://www.schema.org",
   "@type": "EducationEvent",
   "name": "'.$coursedata->course_name.' course",
   "url": "'.base_url().$coursedata->course_slug.'",
+  "eventStatus": "https://schema.org/EventScheduled",
+"eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
   "description": "'.$coursedata->course_meta_description.'",
   "startDate": "'.$startd.'",
   "endDate": "'.$endd.'",
@@ -221,8 +245,13 @@ echo '<script type="application/ld+json">
     }
   }
 }
- </script>';?>
+ </script>';
 
+}
+
+?>
+<?php if($temp==1)
+{?>
 <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -230,7 +259,8 @@ echo '<script type="application/ld+json">
             "name": "Python Training and Courses in Dubai | Python Programming",
             "url": "https://www.edoxitraining.com/python-training-course-in-dubai",
             "image": "https://www.edoxitraining.com/assets/images/logo-regular.svg",
-            "author": "Hiten kapdi",
+            "author":{"@type":"Person",
+            "name":"Hiten kapdi"},
             "reviewBody": "I enrolled for Python Beginner's course. It was really a great learning experience with Mr. Jon BV. He is an amazing teacher. With his vast knowledge and easy to teach practice i was able to learn properly and easily. He understands student's requirement and teach accordingly. He gives proper time to each topic and revisits topics if he feels that student was not able to learn properly. The exercises given by him to complete during class and at home helped me a lot in learning. Would surely recommend Mr. Jon BV for Python. Also the staff at Edoxi is friendly, helpful and professional.",
             "reviewRating": {
                 "@type": "Rating",
@@ -255,5 +285,51 @@ echo '<script type="application/ld+json">
             }
         }
     </script>
+<?php } else{?>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
 
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9/5",
+    "reviewCount": "485"
+  },
+
+  "description": "Learn AutoCAD 2D Course to create 2D designs from concept to construction with our expert-led training from our Authorised Autodesk Training Centre in Dubai.",
+  "name": "AutoCAD 2D Training in Dubai",
+  "image": "https://www.edoxitraining.com/assets/images/logo-regular.svg",
+  
+  "review": [
+    {
+      "@type": "Review",
+      "author": "Danish",
+      "datePublished": "2020-04-21",
+      "reviewBody": "The first course I took at Edoxi Institute was AutoCAD 2D, and because of the quality of training provided, i decided to take the Revit Architecture training there it self. The instructor Mr. Shaheen is very knowledgeable and always prepared to help even with material outside the scope of this course. Overall, I had a great experience in both AutoCAD and Revit and it vastly improved my skills using both of these programs in a short time of training.",
+      "name": "quality of training provided",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": "5",
+        "ratingValue": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": "Reesa Babu",
+      "datePublished": "2020-03-25",
+      "reviewBody": " did a refreshing AutoCAD course ( civil) under Mr.Sujith and had a good learning experience. He was very supportive, helpful and friendly. Timings of the classes are flexible too. I Highly recommend this institute.",
+      "name": "good learning experience",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": "5",
+        "ratingValue": "4.5",
+        "worstRating": "1"
+      }
+    }
+  ]
+}
+</script>
+<?php } ?>
 <?php include('footer.php') ?>
