@@ -115,7 +115,7 @@
                         <label>Author name </label>
                      
                         <select class="form-control" id="ddl_author">
-                
+                        <option <?php if(0==$studyhub->AuthorId) echo 'selected="selected"'; ?> value="0">select author</option>
 
                 <?php
                                 foreach($authors as $author)

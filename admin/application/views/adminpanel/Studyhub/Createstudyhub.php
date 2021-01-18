@@ -137,7 +137,7 @@
                   <div class=" form-group">
                         <label> Related study hubs</label>
                         <select class="form-control select2" id="ddl_related"  multiple="multiple" style="width: 100%;">
-                
+                        <option value="0">select author</option>
 
                 <?php
                                 foreach($studyhubs as $studyhub)
