@@ -213,7 +213,7 @@
 	position: relative;
 	transition-property: transform;
 	display: flex;
-	height: 25rem;
+	/* height: 25rem; */
 }
 .swiper-slide-invisible-blank {
 	visibility: hidden;

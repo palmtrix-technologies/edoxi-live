@@ -729,7 +729,7 @@ body[data-aos-duration="700"] [data-aos] {
 }
 
 /* Search Box */
-.search-container {background:#efefef;padding: 7px;margin-left: .95rem;margin-right: .95rem;border-radius: .3rem;margin-bottom: .95rem;display: flex;align-items: center;flex-grow: 1;order: 3;flex-basis: 100%;border: 1px solid orange;}
+.search-container {background:#efefef;padding: 7px;margin-left: .95rem;margin-right: .95rem;border-radius: .3rem;margin-bottom: .95rem;display: flex;align-items: center;flex-grow: 1;order: 3;flex-basis: 100%;/* border: 1px solid orange; */}
 .search-container .form {position:relative;display: flex;flex-grow:1;border-radius: .5rem;}
 .search-container .search-button {border:0;background: #fff;cursor: pointer;border-top-right-radius: .25rem;border-bottom-right-radius: .25rem;}
 .search-container .search-field {
