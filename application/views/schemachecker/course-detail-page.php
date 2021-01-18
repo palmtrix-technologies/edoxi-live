@@ -304,7 +304,8 @@ else{
   "review": [
     {
       "@type": "Review",
-      "author": "Danish",
+      "author":{"@type":"Person",
+            "name":"Danish"},
       "datePublished": "2020-04-21",
       "reviewBody": "The first course I took at Edoxi Institute was AutoCAD 2D, and because of the quality of training provided, i decided to take the Revit Architecture training there it self. The instructor Mr. Shaheen is very knowledgeable and always prepared to help even with material outside the scope of this course. Overall, I had a great experience in both AutoCAD and Revit and it vastly improved my skills using both of these programs in a short time of training.",
       "name": "quality of training provided",
@@ -317,7 +318,8 @@ else{
     },
     {
       "@type": "Review",
-      "author": "Reesa Babu",
+      "author":{"@type":"Person",
+            "name":""Reesa Babu"},
       "datePublished": "2020-03-25",
       "reviewBody": " did a refreshing AutoCAD course ( civil) under Mr.Sujith and had a good learning experience. He was very supportive, helpful and friendly. Timings of the classes are flexible too. I Highly recommend this institute.",
       "name": "good learning experience",
