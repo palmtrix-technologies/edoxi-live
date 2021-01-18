@@ -123,7 +123,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
         );  
         $result= $this->mainmodel->add_enquiry_log($data2);
         $messages = '
-            <table>
+            <table style="border-color: #666;" cellpadding="10">
                 <tr>
                 <th>Enquiry Type </th><th>'.$type.'</th>
                 </tr>
