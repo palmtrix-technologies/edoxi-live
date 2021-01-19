@@ -687,7 +687,7 @@ button.swiper-pagination-bullet {
 	height: auto;
 	/* border: 3px solid red; */
 	width: 100%;
-	min-height: 248px;
+	min-height: 248.59px;
 }
 .swiper-slide .caption-wrapper .caption-content {width:100%;}
 .swiper-slide .caption-wrapper .h2 {
@@ -695,9 +695,9 @@ button.swiper-pagination-bullet {
 	font-weight: 600;
 	margin-bottom: .15rem;
 }
-.swiper-slide .caption-wrapper .description {font-size: .75rem;line-height: 1.35;color: #fff;width: 100%;}
-.swiper-slide .caption-wrapper .intro {margin-bottom:0;padding-bottom:0;font-size: .90rem;color: #fff;width: 100%;}
-.swiper-slide .caption-wrapper .caption {font-size:1.65rem;margin-bottom: 0;width: 100%;}
+.swiper-slide .caption-wrapper .description {font-size: .75rem;line-height: normal;color: #fff;width: 100%;min-height: 48px;margin-bottom: 1rem;}
+.swiper-slide .caption-wrapper .intro {margin-bottom:0;padding-bottom:0;font-size: .90rem;color: #fff;width: 100%;height: auto;}
+.swiper-slide .caption-wrapper .caption {font-size: 1.50rem;margin-bottom: 0;width: 100%;min-height: 60px;}
 .swiper-slide .caption-wrapper .caption:after {display:none;}
 
 @media only screen and (min-width:576px) {
@@ -742,11 +742,14 @@ button.swiper-pagination-bullet {
 	background-color: #000;
 	left: 0;
 	right: 0;
-	width: 100%;
-	height: 100%;
+	width: auto;
+	height: auto;
 	position: absolute;
 	opacity: 0.45;
 	z-index: 0;
+	border: 4px solid #000;
+	bottom: 0;
+	top: 0;
 }
 
 
@@ -826,7 +829,7 @@ button.swiper-pagination-bullet {
 .why-edoxi {padding-left: 0;padding-right: 0;position: relative;padding-top: 0;padding-bottom: 0;z-index: 3;}
 .why-edoxi > .container, .why-edoxi > .container-fluid {z-index:10;position: relative;}
 .why-edoxi .h2, .why-edoxi .description {color:#fff;}
-.why-edoxi:before {content:"";background: #3569c7;opacity: 0.45;width:100%;height:100%;left:0;top:0;bottom:0;right:0;position: absolute;z-index: 10;}
+.why-edoxi:before {content:"";background: #3569c7;opacity: 0.45;width: auto;height: auto;left:0;top:0;bottom:0;right:0;position: absolute;z-index: 10;border: 2px solid #000;}
 .why-edoxi .bg {position: absolute;z-index:0;top: 0;object-fit: cover;height: 100%;width: 100%;}
 .why-edoxi .description {font-size: .9rem;margin-bottom:1.75rem;font-weight:500;}
 .why-edoxi .list-form-box {background:#fff;position: relative;display: flex;padding: 1.25rem;border-radius: .35rem;flex-direction: column;row-gap: 2rem;}
