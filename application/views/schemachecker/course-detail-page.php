@@ -376,8 +376,8 @@ else{
     "reviewCount": "485"
      },
 
-  "description": "Learn AutoCAD 2D Course to create 2D designs from concept to construction with our expert-led training from our Authorised Autodesk Training Centre in Dubai.",
-  "name": "AutoCAD 2D Training in Dubai",
+  "description": "Learn the latest 3DS Max skills & techniques from Edoxi's Autodesk Authorised Training Centre in Dubai. Get the help of expert trainers and become certified.",
+  "name": "3Ds Max Training in Dubai",
   "image": "https://www.edoxitraining.com/assets/images/logo-regular.svg",
   
   "review": [
