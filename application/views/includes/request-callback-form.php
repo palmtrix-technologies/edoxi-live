@@ -22,8 +22,8 @@
 <div class='validation'>Please enter a valid Phone number</div>
 </div>
 <div class="input-container">
-<input type="text" name="interest" autocomplete="off" class="rcinput search-input1" placeholder="Interested In" id="rcinterest" required="required">
-<ul id="autocomplete-results1" class="autocomplete-results">
+<input type="text" name="interest" autocomplete="off" class="rcinput search-input2" placeholder="Interested In" id="rcinterest" required="required">
+<ul id="autocomplete-results2" class="autocomplete-results">
 </ul>
 <div class='validation'>Please select a course from the list  </div>
 <input type="hidden" name="message"   id="message">

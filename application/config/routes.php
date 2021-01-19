@@ -55,6 +55,8 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['python-training-course-in-dubai']='Main/schemachecker';
 $route['autocad-2d-training-course-in-dubai']='Main/schemachecker1';
+$route['3ds-max-training-course-in-dubai']='Main/schemachecker2';
+
 
 $route['search'] = 'Main/search';
 $route['sitemap'] = 'Main/sitemap';

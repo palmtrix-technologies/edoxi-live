@@ -98,10 +98,10 @@ var courses1 = <?php echo json_encode($Searchdata); ?>;
 </script>
 
 <!-- Font Preload -->
-<link rel="preload" href="assets/fonts/roboto-bold.woff2" as="font" crossorigin="anonymous" />
-<link rel="preload" href="assets/fonts/roboto-regular.woff2" as="font" crossorigin="anonymous" />
-<link rel="preload" href="assets/fonts/roboto-semibold.woff2" as="font" crossorigin="anonymous" />
-<link rel="preload" href="assets/fonts/roboto-black.woff2" as="font" crossorigin="anonymous" />
+<link rel="preload" href="<?=base_url()?>assets/fonts/roboto-bold.woff2" as="font" crossorigin="anonymous" />
+<link rel="preload" href="<?=base_url()?>assets/fonts/roboto-regular.woff2" as="font" crossorigin="anonymous" />
+<link rel="preload" href="<?=base_url()?>assets/fonts/roboto-semibold.woff2" as="font" crossorigin="anonymous" />
+<link rel="preload" href="<?=base_url()?>assets/fonts/roboto-black.woff2" as="font" crossorigin="anonymous" />
 </head>
 
 <body class="<?php /* add body class based on page name  echo $page;*/ ?><?php

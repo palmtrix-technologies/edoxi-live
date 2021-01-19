@@ -17,7 +17,10 @@
 </div>
 <div class="input-container phone">
 <input type="text" name="countrycode" placeholder="+971" class="phone-number">
-<input type="text" name="phone" placeholder="Phone Number" class="phone-number">
+<input type="text" name="phone"id="phonenumber" placeholder="Phone Number" class="phone-number input">
+<div class='validation'>Please enter the Phone number</div>
+<div class='validation'>Please enter a valid Phone number</div>
+<div class='validation'>Please enter a valid Phone number</div>
 </div>
 <div class="input-container">
 <input type="hidden" name="interest"  id="interest">

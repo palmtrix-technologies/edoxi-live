@@ -450,6 +450,19 @@ where ci_subparents.CategoryId=".$categoryId;
 
   }
 
+  function get_coursetestimonial_byid($id)
+  {
+	  $qry ="select tbl_testimonial.*,tbl_course.course_name from ci_course_testimonials 
+	  inner join tbl_testimonial on ci_course_testimonials.`Testimonial_id`=tbl_testimonial.testimonial_id 
+	  inner join tbl_course on tbl_course.course_id=tbl_testimonial.testimonial_course
+	  where tbl_testimonial.testimonial_course=".$id;
+	  
+	  $query = $this->db->query( $qry);
+
+	  return $query->result();
+
+  }
+
   public function get_corporate_testimonials()
 	{
 		

@@ -64,7 +64,7 @@ if($sections->Classname!="Normal")
 <div class="modal-content request-a-callback">
 <h2 class="h2 title">Leave your Details, we'll get back to You!</h2>
 <div class="modal-close"><span></span><span></span></div>
-<?php include('includes/request-callback-form.php') ?>
+<?php include('request-callback-form.php') ?>
 </div>
 </div>
 </div>
@@ -128,11 +128,13 @@ if($sections->Classname!="Normal")
 </div>
 </div>
 <?php }?>
+
+
 </div>
 <div class="col2 sidebar">
 <div class="course-enquiry-box">
 <p class="p title">Request Course Information</p>
-<?php include('includes/enquiry-form.php'); ?>
+<?php include('enquiry-form.php'); ?>
 </div>
 
 <div class="sidebar-links1">
@@ -148,6 +150,35 @@ if($sections->Classname!="Normal")
 
 </div>
 </section>
+
+<?php if(isset($Testimonials)){?>
+<section class="section-fluid students-review">
+<div class="container-fluid" data-aos="fade-up" data-aos-duration="700">
+<h2 class="h2 text-center">Students Review</h2>
+<div class="swiper-container students-review-slider">
+<div class="swiper-wrapper">
+
+<?php foreach($Testimonials as $Testimonial){?>
+<div class="swiper-slide">
+<div class="students-review-box">
+<div class="message"><?=$Testimonial->testimonial_review;?></div>
+<div class="details">
+	<p class="name"><?=$Testimonial->testimonial_name;?></p>
+	<p class="company"><?=$Testimonial->course_name;?></p>
+	<p class="designation"><?=$Testimonial->Designation;?></p>
+</div>
+</div>
+</div>
+<?php } ?>
+
+</div>	
+</div>	
+<div class="students-review-slider-pagination"></div>
+</div>
+	<p class="btn-wrapper text-center"><a href="testimonials" class="btn blue-bg">View All Testimonials</a></p>
+</section>
+<?php }?>
+
 </div>
 
 <?php  if(isset($faq)&&count($faq)>0){ 
@@ -285,7 +316,7 @@ else{
             }
         }
     </script>
-<?php } else{?>
+<?php } else if($temp==2){?>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -333,5 +364,100 @@ else{
   ]
 }
 </script>
-<?php } ?>
+<?php } else{?>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Office 504, Bank Street Building Next to Burjuman Metro Station Exit 3 - Khalid Bin Al Waleed Rd ",
+                    "addressLocality": "Burjuman",
+                    "addressRegion": "dubai",
+                    "postalCode": "122002",
+                    "telephone": "+97143801666",
+                    "addressCountry": {
+                        "@type": "Country",
+                        "name": "United Arab Emirates"
+                    }
+  },
+  "description": "Leading educational training institute in Dubai offering extensive career-orientated courses including Computer, Accounting, Language and Management Courses for individuals and corporates by highly experienced trainers. Call us at 043801666  to join our courses.",
+  "name": "Edoxi Training Institute",
+  "telephone": "+97143801666"
+  "products":{
+  "@type": "Product",
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9/5",
+    "reviewCount": "485"
+     },
+
+  "description": "Learn AutoCAD 2D Course to create 2D designs from concept to construction with our expert-led training from our Authorised Autodesk Training Centre in Dubai.",
+  "name": "AutoCAD 2D Training in Dubai",
+  "image": "https://www.edoxitraining.com/assets/images/logo-regular.svg",
+  
+  "review": [
+    {
+      "@type": "Review",
+      "author":{"@type":"Person",
+            "name":"Abdul Hadi"},
+      "datePublished": "2020-04-21",
+      "reviewBody": "The 3D MAX course here along with PG in Adob Photoshop was great experience and teaching methods are really good. Given a lot of time to work and study and the faculties are polite. Definitely worth with it, taught me 3D MAX in 30 hr. thank you so much Mr. Sujith for your guidance.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": "5",
+        "ratingValue": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "Review",
+      "author":{"@type":"Person",
+            "name":"Swathi Prathap"},
+      "datePublished": "2020-03-25",
+      "reviewBody": "The 3D Max course here along with Post Production in Adobe Photoshop was a great experience and the teaching methods are really good. Given a lot of time to work and study and the faculties are very polite. Definitely worth it, taught me 3Ds MAX in 30 hours. Thank you so much Mr. Sujith for your guidance",
+      "name": "3D Max course here along with Post Production",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": "5",
+        "ratingValue": "4.5",
+        "worstRating": "1"
+      }
+    }
+    ,
+    {
+      "@type": "Review",
+      "author":{"@type":"Person",
+            "name":"Shraddha Kargutkar"},
+      "datePublished": "2020-03-25",
+      "reviewBody": "I did my Auto cad 2d , 3D and 3D max course in Edoxi institute. Training with designed exercises made the entire courses easy to learn. Mr. Sujith Sir explained all concepts nicely. I would recommend this institute for leaning the Designing software.",
+      "name": "Training with designed exercises",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": "5",
+        "ratingValue": "4.5",
+        "worstRating": "1"
+      }
+    }
+    ,
+    {
+      "@type": "Review",
+      "author":{"@type":"Person",
+            "name":"Sajin Mathew"},
+      "datePublished": "2020-03-25",
+      "reviewBody": "Edoxi Training Institute  is the best with highly experienced teachers. I studied 3ds max under Mr. Sujith Sir , he have a good knowledge in 3ds max and other softwares too. He makes sure that his students clear all the doubt before the end of the course. Thanks Sujith Sir .",
+      "name": "highly experienced teachers",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": "5",
+        "ratingValue": "4.5",
+        "worstRating": "1"
+      }
+    }
+  ]
+  }
+}
+</script>
+<?php }?>
 <?php include('footer.php') ?>

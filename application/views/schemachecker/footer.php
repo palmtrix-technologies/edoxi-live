@@ -138,8 +138,8 @@ else{
         <script src="'.base_url().'assets/js/courses.js" async></script>'; 
         }
         else if($pagename == "course-detail-page") {
-        echo '<script src="'.base_url().'assets/js/globals.js" async></script>
-        <script src="'.base_url().'assets/js/courses.js" async></script>'; 
+            echo '<script src="'.base_url().'assets/js/globals.min.js" async></script>
+            <script src="'.base_url().'assets/js/courses.min.js" async></script>'; 
         }
         else if($pagename == "corporate-training") {
         echo '<script src="'.base_url().'assets/js/globals.js" async></script>
@@ -151,6 +151,7 @@ else{
 }
 
 ?>
+<script src="<?=base_url()?>assets/js/courses.js" async></script>
 <!-- 
 <script type='application/ld+json'>
 {"@context":"http://www.schema.org",
