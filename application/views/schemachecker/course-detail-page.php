@@ -369,23 +369,6 @@ else{
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Office 504, Bank Street Building Next to Burjuman Metro Station Exit 3 - Khalid Bin Al Waleed Rd ",
-                    "addressLocality": "Burjuman",
-                    "addressRegion": "dubai",
-                    "postalCode": "122002",
-                    "telephone": "+97143801666",
-                    "addressCountry": {
-                        "@type": "Country",
-                        "name": "United Arab Emirates"
-                    }
-  },
-  "description": "Leading educational training institute in Dubai offering extensive career-orientated courses including Computer, Accounting, Language and Management Courses for individuals and corporates by highly experienced trainers. Call us at 043801666  to join our courses.",
-  "name": "Edoxi Training Institute",
-  "telephone": "+97143801666",
-  "products":{
   "@type": "Product",
     "aggregateRating": {
     "@type": "AggregateRating",
@@ -421,7 +404,7 @@ else{
       "reviewRating": {
         "@type": "Rating",
         "bestRating": "5",
-        "ratingValue": "4.5",
+        "ratingValue": "4.4",
         "worstRating": "1"
       }
     }
@@ -436,7 +419,7 @@ else{
       "reviewRating": {
         "@type": "Rating",
         "bestRating": "5",
-        "ratingValue": "4.5",
+        "ratingValue": "4.9",
         "worstRating": "1"
       }
     }
@@ -451,12 +434,12 @@ else{
       "reviewRating": {
         "@type": "Rating",
         "bestRating": "5",
-        "ratingValue": "4.5",
+        "ratingValue": "4.8",
         "worstRating": "1"
       }
     }
   ]
-  }
+  
 }
 </script>
 <?php }?>
