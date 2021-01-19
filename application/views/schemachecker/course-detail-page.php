@@ -350,7 +350,7 @@ else{
     {
       "@type": "Review",
       "author":{"@type":"Person",
-            "name":""Reesa Babu"},
+            "name":"Reesa Babu"},
       "datePublished": "2020-03-25",
       "reviewBody": " did a refreshing AutoCAD course ( civil) under Mr.Sujith and had a good learning experience. He was very supportive, helpful and friendly. Timings of the classes are flexible too. I Highly recommend this institute.",
       "name": "good learning experience",
