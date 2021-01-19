@@ -688,7 +688,7 @@ body[data-aos-duration="700"] [data-aos] {
 
 @media only screen and (min-width:576px) {
 .site-header .container-fluid .block1 { column-gap: 2rem;margin-top: 1rem;}
-.site-header .request-callback-phone {flex-basis: initial;order: 2;/* width: 410px; */flex-grow: initial;}	
+.site-header .request-callback-phone {flex-basis: initial;order: 2;width: 410px;flex-grow: initial;}	
 .site-header .container-fluid .block2 .navigation-trigger {top: .9rem;}
 }
 
@@ -712,8 +712,8 @@ body[data-aos-duration="700"] [data-aos] {
  
 /* Request Call Back & Phone */
 .request-callback {cursor:pointer;}
-.request-callback-phone {display: flex;position: relative;margin-bottom: 10px;flex-grow: 1;order: 1;flex-basis: 100%;}
-.request-callback-phone .request-callback {background:#ff903b;color: #fff;text-decoration: none;flex-grow: 1;flex-basis: 50%;font-size: .80rem;display: flex;justify-content: center;align-items: center;height: 2.5rem;/* position: absolute; *//* right: 0; *//* top: 35px; *//* margin-top: 10px; */padding-left: 1.15rem;padding-right: 1.15rem;/* margin-right: 10px; *//* border-radius: 3px; */font-weight: 500;white-space: nowrap;cursor: pointer;width: 50%;}
+.request-callback-phone {display: flex;position: relative;margin-bottom: 10px;flex-grow: 1;order: 1;flex-basis: 100%;height: auto;width: 100%;}
+.request-callback-phone .request-callback {background:#ff903b;color: #fff;text-decoration: none;/* flex-grow: 1; */flex-basis: 50%;font-size: .80rem;display: flex;justify-content: center;align-items: center;height: 2.5rem;/* position: absolute; *//* right: 0; *//* top: 35px; *//* margin-top: 10px; */padding-left: 1.15rem;padding-right: 1.15rem;/* margin-right: 10px; *//* border-radius: 3px; */font-weight: 500;white-space: nowrap;cursor: pointer;/* width: 50%; */line-height: 2.5rem;}
 .request-callback-phone .request-callback:hover {background: #fdb254;color: #fff;}
 .request-callback-phone > .phone {background:#527bd3;color: #fff;text-decoration: none;display: flex;align-items: center;justify-content: center;height: 2.5rem;font-size: .80rem;font-weight: 500;padding-left: 1.25rem;padding-right: 1.25rem;width: 50%;}
 .request-callback-phone > .phone:hover {background:#0652a4;}
