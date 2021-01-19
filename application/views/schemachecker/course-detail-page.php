@@ -249,9 +249,9 @@ if(isset($batches)&&count($batches)>0){
 
 }
 else{
-  $startd=$dummydate->startdate;
-  $endd=$dummydate->enddate;
 
+  $startd=$dummydate->startdate."T09:00:00+04:00";
+  $endd=$dummydate->enddate."T18:00:00+04:00";
   echo '<script type="application/ld+json"> 
 {
   "@context": "http://www.schema.org",
@@ -384,7 +384,7 @@ else{
   },
   "description": "Leading educational training institute in Dubai offering extensive career-orientated courses including Computer, Accounting, Language and Management Courses for individuals and corporates by highly experienced trainers. Call us at 043801666  to join our courses.",
   "name": "Edoxi Training Institute",
-  "telephone": "+97143801666"
+  "telephone": "+97143801666",
   "products":{
   "@type": "Product",
     "aggregateRating": {
