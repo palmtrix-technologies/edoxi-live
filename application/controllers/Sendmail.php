@@ -59,7 +59,7 @@ class sendmail extends CI_Controller {
         }
         
 
-        
+        $this->load->view('enquiry-success');
         
     }
 
@@ -84,7 +84,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
 
           $this->load->library('email', $config);
           $this->email->set_newline("\r\n");
-          $this->email->from('info@edoxitraing.com');
+          $this->email->from('info@edoxitraining.com');
           $this->email->to($email);
           $this->email->subject($subject);
           $this->email->message($message);
@@ -93,7 +93,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
          {
           $messge="white paper mail sent successfully please check your mail attachment";
             // $this->session->keep_flashdata('Message',$messge);
-            redirect($_POST['actual_link']);
+            // redirect($_POST['actual_link']);
          }
          else
         {
@@ -122,7 +122,34 @@ public function sendEmail($email,$subject,$message,$attched_file)
             'Company_name' => $comapny
         );  
         $result= $this->mainmodel->add_enquiry_log($data2);
-
+        $messages = '
+            <table style="border: solid black 1px;" cellpadding="10">
+                <tr>
+                <th>Enquiry Type </th><th>'.$type.'</th>
+                </tr>
+                <tr>
+                <th>Name </th><th>'.$name.'</th>
+                </tr>
+                <tr>
+                <th>Mobile </th><th>'.$phone.'</th>
+                </tr>
+                <tr>
+                <th>Email </th><th>'.$email.'</th>
+                </tr>
+                <tr>
+                <th>Course Name </th><th>'.$Course_Name.'</th>
+                </tr>
+                <tr>
+                <th>Message  </th><th>'.$message.'</th>
+                </tr>
+                <tr>
+                <th>Company name </th><th>'.$comapny.'</th>
+                </tr>
+                <tr>
+                <th>Enquiry Date time </th><th>'.date("Y-m-d h:i:sa").'</th>
+                </tr>
+            </table>';
+        $this->sendEmail_withoutattachment("New Enquiry -".$type,$messages);
         $result["Searchdata"] = $this->mainmodel->GetAllcourse_forsearch();
         $result["header_menus"] = $this->mainmodel->display_header_menu();
         $result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
@@ -157,7 +184,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
             
     }
 
-    public function sendEmail_withoutattachment($email,$subject,$message)
+    public function sendEmail_withoutattachment($subject,$message)
     {
 
        
@@ -165,9 +192,9 @@ public function sendEmail($email,$subject,$message,$attched_file)
 
     $config = Array(
       'protocol' => 'mail',
-      'smtp_host' => 'mail.palmtrix.app',
+      'smtp_host' => 'mail.edoxitraining.com',
       'smtp_port' => 587,
-      'smtp_user' => 'demo@palmtrix.app', 
+      'smtp_user' => 'info@edoxitraining.com', 
       'smtp_pass' => '#38Palmtrix', 
       'mailtype' => 'html',
       'charset' => 'iso-8859-1',
@@ -177,17 +204,16 @@ public function sendEmail($email,$subject,$message,$attched_file)
 
           $this->load->library('email', $config);
           $this->email->set_newline("\r\n");
-          $this->email->from('info@edoxitraing.com');
-          $this->email->to($email);
+          $this->email->from('enquiry@edoxitraining.com');
+          $this->email->to('info@edoxitraining.com');
           $this->email->subject($subject);
           $this->email->message($message);
-          $this->email->attach($attched_file);
           if($this->email->send())
-         {
-          $messge="white paper mail sent successfully please check your mail attachment";
-            // $this->session->keep_flashdata('Message',$messge);
-            redirect($_POST['actual_link']);
-         }
+          {
+             $messge="white paper mail sent successfully please check your mail attachment";
+            //     // $this->session->keep_flashdata('Message',$messge);
+            //     redirect($_POST['actual_link']);
+        }
          else
         {
          show_error($this->email->print_debugger());

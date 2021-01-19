@@ -5,31 +5,39 @@
 
 <form id="form2" class="request-callback-form" action="<?=base_url();?>send-enquiry" method="post"> 
 <div class="input-container">
-<input type="text" name="name" placeholder="Name" id="cbname" required="required">
+<input type="text" name="name" placeholder="Name" class="cbinput" id="cbname" required="required">
+<div class='validation'>Please enter the Name</div>
+<div class='validation'>Numbers not allowed in Name Field</div>
 </div>
 <div class="input-container">
-<input type="email" name="email" placeholder="E-mail" id="cbemail" required="required">
+<input type="email" name="email" class="cbinput" placeholder="E-mail" id="cbemail" required="required">
+<div class='validation'>Please enter the Email</div>
+<div class='validation'>Please enter a valid email address</div>
 </div>
 
 <div class="input-container phone">
 <input type="text" name="countrycode" placeholder="+971" class="phone-number">
-<input type="text" name="phone" id="cbphonenumber" placeholder="Phone Number" class="phone-number">
+<input type="text" name="phone" id="cbphonenumber"  placeholder="Phone Number" class="phone-number cbinput">
+<div class='validation'>Please enter the Phone number</div>
+<div class='validation'>Please enter a valid Phone number</div>
+<div class='validation'>Please enter a valid Phone number</div>
 </div>
 <div class="input-container">
 <input type="hidden" name="interest"  id="interest">
 <input type="hidden" name="companyname" id="companyname">
 
 <input type="hidden" name="eng_type" value="corporate-booking">
-<textarea name="message" placeholder="" id="message" cols="30" rows="2">I would like to get more information about Corporate Training</textarea>
+<textarea name="cbmessage" placeholder="" id="message" cols="30" rows="2">I would like to get more information about Corporate Training</textarea>
+<div class='validation'>Please enter your queries  </div>
 </div>
 
 </form>
-<p class="btn-wrapper"><input type="submit"  value="Submit" id="rcsubmit" class="btn yellow-bg"></p>
+<p class="btn-wrapper"><input type="submit" onClick="validationcb();"  value="Submit" id="cbsubmit" class="btn yellow-bg"></p>
 
 
 
 <script>
-function validationrc() {
+function validationcb() {
 
 // checking all fields are null
 let inputs = document.getElementsByClassName('cbinput'); 
@@ -44,7 +52,7 @@ inputs[i].nextElementSibling.classList.add('show');
 
 
 // validation for name
-var name = document.getElementById('rcname');
+var name = document.getElementById('cbname');
 var namevalue = name.value;
 if (name.value=='') {
     name.nextElementSibling.classList.add('show');
@@ -66,7 +74,7 @@ if (name.value=='') {
 // Validatin for Email
 let emailfilter=/^\w+[\+\.\w-]*@([\w-]+\.)*\w+[\w-]*\.([a-z]{2,4}|\d+)$/i // regexp to check email
 
-let email = document.getElementById('rcemail');
+let email = document.getElementById('cbemail');
 let emailvalue = email.value;
 
 let checkemail=emailfilter.test(email.value); // setting the email field to validate
@@ -90,7 +98,7 @@ email.nextElementSibling.nextElementSibling.classList.remove('show');
 }
 
 // validation for phone number
-let phonenumber = document.getElementById('rcphonenumber');
+let phonenumber = document.getElementById('cbphonenumber');
 let phonenumbervalue = phonenumber.value;
 if (phonenumbervalue=='') {
     phonenumber.nextElementSibling.classList.add('show');
@@ -119,7 +127,7 @@ if (phonenumbervalue=='') {
   }	
 
 // Ajax starts here
- document.getElementById("form1").submit();
+ document.getElementById("form2").submit();
 
 
 }

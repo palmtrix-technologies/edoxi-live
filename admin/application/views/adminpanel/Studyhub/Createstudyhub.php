@@ -112,7 +112,7 @@
                      <div class="col-md-12 form-group">
                         <label>Author name</label>
                         <select class="form-control" id="ddl_author">
-                
+                        <option value="0">select author</option>
 
                 <?php
                                 foreach($authors as $author)
@@ -137,7 +137,8 @@
                   <div class=" form-group">
                         <label> Related study hubs</label>
                         <select class="form-control select2" id="ddl_related"  multiple="multiple" style="width: 100%;">
-                
+                       
+
 
                 <?php
                                 foreach($studyhubs as $studyhub)

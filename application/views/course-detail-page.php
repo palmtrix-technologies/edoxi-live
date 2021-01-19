@@ -56,7 +56,7 @@ if($sections->Classname!="Normal")
 <?php }  } ?>
 
 <div class="highlight-box">To enrol in our <?=$coursedata->course_name?> Training in Dubai <span class="call">Call us on <a href="callto:04 3801666">04 3801666</a></span> </div>
-<h3 class="h3 booking">Book a <?=$coursedata->course_name?> Training Course today</h3>
+<h3 class="h3 booking">Book Your <?=$coursedata->course_name?> Training Course Today</h3>
 <div class="btn-wrapper text-center">
 <a class="btn orange-bg request-callback modal-open">Request a Call Back</a>
 <div class="modal-container">

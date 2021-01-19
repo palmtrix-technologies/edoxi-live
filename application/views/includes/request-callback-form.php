@@ -12,7 +12,7 @@
 <div class="input-container">
 <input type="email" name="email" placeholder="E-mail" id="rcemail" class="rcinput" required="required">
 <div class='validation'>Please enter the Email</div>
-<div class='validation'>Please enter a valid email</div>
+<div class='validation'>Please enter a valid email address</div>
 </div>
 <div class="input-container phone">
 <input type="text" name="countrycode" placeholder="+971" class="phone-number">
@@ -22,8 +22,10 @@
 <div class='validation'>Please enter a valid Phone number</div>
 </div>
 <div class="input-container">
-<input type="text" name="interest" class="rcinput" placeholder="Interested In" id="rcinterest" required="required">
-<div class='validation'>Please enter  </div>
+<input type="text" name="interest" autocomplete="off" class="rcinput search-input1" placeholder="Interested In" id="rcinterest" required="required">
+<ul id="autocomplete-results1" class="autocomplete-results">
+</ul>
+<div class='validation'>Please select a course from the list  </div>
 <input type="hidden" name="message"   id="message">
 <input type="hidden" name="companyname" id="companyname">
 <input type="hidden" name="eng_type" value="call-back">	

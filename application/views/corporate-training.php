@@ -38,7 +38,7 @@
 <div class="swiper-container corporate-courses-slider">
 <div class="swiper-wrapper">
 <div class="swiper-slide">
-<a href="<?=base_url()?>courses">
+<a href="<?=base_url()?>softskills-courses">
 <div class="course-box">
 <img src="assets/images/softskill-icon.svg" width="50" height="50" alt="softskill-icon" class="img">
 <div class="course-name">Soft skills Training</div>
@@ -70,7 +70,7 @@
 </a>
 </div>
 <div class="swiper-slide">
-<a href="<?=base_url()?>courses">
+<a href="<?=base_url()?>development-courses">
 <div class="course-box">
 <img src="assets/images/development-training-icon.svg" width="50" height="50" alt="interactivity-icon" class="img">
 <div class="course-name">Development Training</div>

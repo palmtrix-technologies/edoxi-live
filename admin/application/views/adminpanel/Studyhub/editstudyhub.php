@@ -112,15 +112,16 @@
                         <textarea type="text" name="txt_shortdescription" class="form-control"><?=$studyhub->ShortDescription;?></textarea>
                      </div>
                      <div class="col-md-12 form-group">
-                        <label>Author name</label>
+                        <label>Author name </label>
+                     
                         <select class="form-control" id="ddl_author">
-                
+                        <option <?php if(0==$studyhub->AuthorId) echo 'selected="selected"'; ?> value="0">select author</option>
 
                 <?php
                                 foreach($authors as $author)
                                 {
                                 ?> 
-                                         <option value="<?php echo $author->ci_studyhub_authorid;?>">
+                                         <option <?php if($author->ci_studyhub_authorid==$studyhub->AuthorId) echo 'selected="selected"'; ?>  value="<?php echo $author->ci_studyhub_authorid;?>">
                                             <?php echo $author->Author_name;?></option>
                                         <?php
                                 }
