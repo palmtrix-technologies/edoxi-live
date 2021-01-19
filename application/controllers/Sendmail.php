@@ -59,7 +59,7 @@ class sendmail extends CI_Controller {
         }
         
 
-        
+        $this->load->view('enquiry-success');
         
     }
 
@@ -93,7 +93,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
          {
           $messge="white paper mail sent successfully please check your mail attachment";
             // $this->session->keep_flashdata('Message',$messge);
-            redirect($_POST['actual_link']);
+            // redirect($_POST['actual_link']);
          }
          else
         {
