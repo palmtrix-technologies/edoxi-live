@@ -115,11 +115,11 @@ if($sections->Classname!="Normal")
 <a href="<?= $courses->course_slug;?>">
 <div class="course-name"><?= $courses->course_name;?> Courses in Dubai</div>
 <div class="course-rating">
-<img src="assets/images/rating-star-full.svg" alt="rating1" width="16" height="14">
-<img src="assets/images/rating-star-full.svg" alt="rating2" width="16" height="14">
-<img src="assets/images/rating-star-full.svg" alt="rating3" width="16" height="14">
-<img src="assets/images/rating-star-full.svg" alt="rating4" width="16" height="14">
-<img src="assets/images/rating-star-half.svg" alt="rating5" width="16" height="14">
+<img src="<?=base_url()?>assets/images/rating-star-full.svg" alt="rating1" width="16" height="14">
+<img src="<?=base_url()?>assets/images/rating-star-full.svg" alt="rating2" width="16" height="14">
+<img src="<?=base_url()?>assets/images/rating-star-full.svg" alt="rating3" width="16" height="14">
+<img src="<?=base_url()?>assets/images/rating-star-full.svg" alt="rating4" width="16" height="14">
+<img src="<?=base_url()?>assets/images/rating-star-half.svg" alt="rating5" width="16" height="14">
 </div>
 </a>
 <?php }?>
