@@ -418,7 +418,7 @@
 <div class="lists">
 <ul>
 <li class="box">
-<div class="count">1000+</div>
+<div class="count">4000+</div>
 <div class="description">Students Certified</div>
 </li>
 <li class="box">
@@ -426,7 +426,7 @@
 <div class="description">Courses To Select</div>
 </li>
 <li class="box">
-<div class="count">2000+</div>
+<div class="count">50000+</div>
 <div class="description">Hours Completed</div>
 </li>
 <li class="box">
