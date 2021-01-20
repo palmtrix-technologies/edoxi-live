@@ -1319,6 +1319,7 @@ body.lb-disable-scrolling {
 .contact-us .two-column-layout .col2 .course-enquiry-box {margin-bottom:0;width: 100%;}
 
 .contact-us .address-contact-box {background:#f9f9f9;padding: 1.35rem;border-radius: .5rem;display: flex;flex-direction: column;row-gap: 1rem;border: 1px solid #eaeaea;height: 100%;text-align: center;justify-content: center;}
+.contact-us .address-contact-box .address-box .address {text-align:center !important;}
 .contact-us .address-contact-box .address-box h3 {margin-top:0;}
 .contact-us .address-contact-box  img {width: auto;height: 1.5rem;display: block;margin: 0 auto .5rem auto;}
 .contact-us .address-contact-box  .youtube-icon {height:1.15rem}
