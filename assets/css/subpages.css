@@ -984,12 +984,17 @@
 .study-hub .main-article-detailed .writer-details {display:flex;flex-direction:column;}
 .study-hub .main-article-detailed .writer-details img {
     border: 1px solid #dedede;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     height: auto;
     object-fit: cover;
     max-height: 150px;
+    float: left;
+    margin-right: 1rem;
 }
-.study-hub .main-article-detailed .writer-details .name {font-weight:500;}
+.study-hub .main-article-detailed .writer-details .name {font-weight:500;display: flex;}
+.study-hub .main-article-detailed .writer-details .name a {border-bottom:none;}
+
+.study-hub .main-article-detailed .writer-details .name img {height:1.25rem;width:auto;border:none;margin-right: .5rem;margin-bottom: 0;}
 .study-hub .reply-form .form-box .heading:after {display:none;}
 
 .study-hub .main-article .img {margin:0 auto;display:block;margin-bottom: 2rem;width: 100%;max-height: 375px;border-top-left-radius: .5rem;border-top-right-radius: .5rem;}
