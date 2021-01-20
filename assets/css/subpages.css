@@ -1022,6 +1022,9 @@
 .study-hub .recommended-articles .lists ul li:last-child {border-bottom:none;}
 .study-hub .recommended-articles .lists ul li:hover {background: #fcfcfc;}
 .study-hub .recommended-articles .lists ul li a {display: block;}
+.study-hub .search-box .autocomplete-results {background: #0652a4;}
+.study-hub .search-box .autocomplete-results li {color: #fff;border-bottom: 1px solid #879fd4;}
+.study-hub .search-box .autocomplete-results li:hover {color: #0652a4;border-bottom: 1px solid #879fd4;}
 
 @media only screen and (min-width:768px) {    
 .study-hub section {padding-top:3rem !important;padding-bottom: 3rem !important;}    

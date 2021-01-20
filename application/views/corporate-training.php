@@ -375,12 +375,9 @@ valued, neither will your customers</p>
 <div class="container" data-aos="fade-up" data-aos-duration="700">
 <div class="swiper-container corporate-clientele">
 <div class="swiper-wrapper">
-<div class="swiper-slide"> 
-<img src="assets/images/dewa-logo.svg" width="150" height="66" alt="dewa" class="img">
+<div class="swiper-slide"><img src="assets/images/dewa-logo.svg" width="150" height="66" alt="dewa" class="img">
 </div>
-<div class="swiper-slide"> 
-<img src="assets/images/rta-logo.svg" width="147" height="53" alt="rta" class="img">
-</div>
+<div class="swiper-slide"><img src="assets/images/rta-logo.svg" width="147" height="53" alt="rta" class="img"></div>
 <div class="swiper-slide"> 
 <img src="assets/images/dubai-petroleum-logo.svg" width="170" height="43" alt="dubai-petroleum" class="img">
 </div>
@@ -393,8 +390,7 @@ valued, neither will your customers</p>
 <div class="swiper-slide"> 
 <img src="assets/images/elm-logo.svg" width="65" height="65" alt="elm" class="img">
 </div>
-<div class="swiper-slide"> 
-<img src="assets/images/lulu-logo.svg" width="150" height="33" alt="elm" class="img">
+<div class="swiper-slide"><img src="assets/images/lulu-logo.svg" width="150" height="33" alt="elm" class="img">
 </div>
 <div class="swiper-slide"> 
 <img src="assets/images/ajman-university-logo.svg" width="170" height="60" alt="ajman-university" class="img">
@@ -410,6 +406,21 @@ valued, neither will your customers</p>
 </div>
 <div class="swiper-slide"> 
 <img src="assets/images/atkins-logo.svg" width="80" height="17" alt="atkins" class="img">
+</div>
+<div class="swiper-slide"> 
+<img src="assets/images/kinolt-logo.svg" width="163" height="50" alt="kinolt" class="img">
+</div>
+<div class="swiper-slide"> 
+<img src="assets/images/kinolt-logo.svg" width="163" height="50" alt="kinolt" class="img">
+</div>
+<div class="swiper-slide"> 
+<img src="assets/images/dno-logo.svg" width="69" height="55" alt="dno" class="img">
+</div>
+<div class="swiper-slide"> 
+<img src="assets/images/abb-logo.svg" width="94" height="37" alt="dno" class="img">
+</div>
+<div class="swiper-slide"> 
+<img src="assets/images/denso-logo.svg" width="135" height="28" alt="dno" class="img">
 </div>
 </div>	
 <div class="corporate-clientele-pagination"></div>
