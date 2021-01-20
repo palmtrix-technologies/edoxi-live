@@ -14,7 +14,7 @@ Dubai United Arab Emirates</p></div>
 <img src="<?=base_url();?>assets/images/phone-icon-yellow.svg" width="20" height="25" alt="Edoxi Header Logo" class="footer-logo"/><a href="tel:043801666">04 380 1666</a>
 </div>
 <div class="numbers">
-<img src="<?=base_url();?>assets/images/whatsapp-icon-yellow.svg" width="20" height="25" alt="Edoxi Header Logo" class="footer-logo"/><a href="tel:0581236600">058 123 6600</a>
+<img src="<?=base_url();?>assets/images/whatsapp-icon-yellow.svg" width="20" height="25" alt="Edoxi Header Logo" class="footer-logo"/><a href="https://wa.me/971581236600/?text=Hi Edoxi Team">058 123 6600</a>
 </div>
 </div>
 <div class="email">
