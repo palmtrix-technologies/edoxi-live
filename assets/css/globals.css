@@ -125,14 +125,15 @@ section .container {}
 }
 
 input, select {font-size: .75rem;border:none;border-radius:.25rem;color: #666;max-width:100%;width: 100%;height: 2.75rem;line-height: 2.75rem;text-indent: .30rem;border: 1px solid #cdcdcd;}
-textarea {border:1px solid #cdcdcd;width:100%;border-radius:.25rem;padding:.70rem;font-family: inherit;color: #666;font-size: .75rem;}
+textarea {border:1px solid #cdcdcd;width:100%;border-radius:.25rem;padding:.70rem;font-family: inherit;color: #666;font-size: .75rem;margin-bottom: 0;line-height: normal;}
 
 .input-container {margin-bottom:.9rem;position: relative;}
-.input-container.phone {display:flex;/* column-gap:.9rem; */flex-direction: row;}
+.input-container.phone {display:flex;/* column-gap:.9rem; */flex-direction: row;flex-wrap: wrap;}
+.input-container.phone .validation {flex-grow:1;width:100%;}
 .input-container.phone select {width: 6.5rem;text-indent: 0;padding-left: .1rem;}
 .corporate-query-form .input-container.phone select {background: #f0f0f0;}
 .input-container.phone input:first-child {width: 3rem;margin-right: .9rem;}
-.input-container.phone input:last-child {}
+.input-container.phone input:nth-child(2) {flex-basis:0;flex-grow:1;}
 
 input[type="submit"] {padding:0;border:0;}
 input[type="submit"].btn {width:auto;text-indent:0;padding-left:1rem;padding-right:1rem;cursor:pointer;transition:all 0.5s ease 0s;}
@@ -725,7 +726,7 @@ body[data-aos-duration="700"] [data-aos] {
 @media only screen and (min-width:1200px) {
 .request-callback-phone {order:initial;}
 .request-callback-phone .request-callback {height: 3.25rem;/* width: 180px; */font-size: .80rem;/* font-weight: 600; */letter-spacing: 0;font-weight: 500;border-top-left-radius: 4px;border-bottom-left-radius: 4px;}
-.request-callback-phone .phone {height: 3.25rem;border-top-right-radius: 4px;border-bottom-right-radius: 4px;}
+.request-callback-phone .phone {height: auto;border-top-right-radius: 4px;border-bottom-right-radius: 4px;}
 }
 
 /* Search Box */
@@ -989,6 +990,7 @@ transform:rotate(180deg);
 	justify-content: center;
 	border-radius: 100%;
 	z-index: 50;
+	display: none;
 }
 .show-back-to-top {
 	opacity:1  !important;

@@ -829,7 +829,7 @@ button.swiper-pagination-bullet {
 .why-edoxi {padding-left: 0;padding-right: 0;position: relative;padding-top: 0;padding-bottom: 0;z-index: 3;}
 .why-edoxi > .container, .why-edoxi > .container-fluid {z-index:10;position: relative;}
 .why-edoxi .h2, .why-edoxi .description {color:#fff;}
-.why-edoxi:before {content:"";background: #3569c7;opacity: 0.45;width: auto;height: auto;left:0;top:0;bottom:0;right:0;position: absolute;z-index: 10;border: 2px solid #000;}
+.why-edoxi:before {content:"";background: #3569c7;opacity: 0.45;width: auto;height: auto;left:0;top:0;bottom:0;right:0;position: absolute;z-index: 10;/* border: 2px solid #000; */}
 .why-edoxi .bg {position: absolute;z-index:0;top: 0;object-fit: cover;height: 100%;width: 100%;}
 .why-edoxi .description {font-size: .9rem;margin-bottom:1.75rem;font-weight:500;}
 .why-edoxi .list-form-box {background:#fff;position: relative;display: flex;padding: 1.25rem;border-radius: .35rem;flex-direction: column;row-gap: 2rem;}

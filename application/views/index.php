@@ -205,7 +205,7 @@
 <div class="lists">
 <ul>
 <li>
-		<a href="courses">
+		<a href="development-courses">
 		<div class="icon-box"><img src="assets/images/development-icon.svg" width="27" height="25" alt="development-icon" class="img"></div>
 		<div class="content-box"><h3 class="h3">Development</h3>
 		<p class="p">From web development, to mobile development, to game development, to Programming Languages, Edoxi has courses from top rated instructors.</p>
@@ -213,7 +213,7 @@
 		</a>
 		</li>
 <li>
-	<a href="courses">
+	<a href="data-science-courses">
 	<div class="icon-box"><img src="assets/images/database-icon.svg" width="20" height="24" alt="web-development-icon" class="img"></div>
 		<div class="content-box">
 		<h3 class="h3">Data Science</h3>
@@ -222,7 +222,7 @@
 		</a>
 		</li>
 		<li>
-		<a href="courses">
+		<a href="category/cyber-security-courses">
 		<div class="icon-box"><img src="assets/images/cybersecurity-icon.svg" width="25" height="29" alt="web-development-icon" class="img"></div>
 		<div class="content-box"><h3 class="h3">Cyber Security</h3>
 		<p class="p">Master the skills to secure your network and learn the best practices you can implement today to help you and your company stay safer online.</p>
@@ -230,7 +230,7 @@
 		</a>
 		</li>
 		<li>
-		<a href="courses">
+		<a href="category/digital-marketing-courses-in-dubai">
 	<div class="icon-box"><img src="assets/images/google-icon.svg" width="27" height="28" alt="web-development-icon" class="img"></div>
 				<div class="content-box"><h3 class="h3">Digital Marketing</h3>
 		<p class="p">Transform yourself into a complete digital marketer with our hands-on learning experiences in SEO, PPC, Analytics, Content, Email Marketing, and more.</p>
@@ -238,7 +238,7 @@
 		</a>
 		</li>
 		<li>
-		<a href="courses">
+		<a href="category/project-management-courses-in-dubai">
 	<div class="icon-box"><img src="assets/images/project-management-icon.svg" width="29" height="29" alt="web-development-icon" class="img"></div>
 				<div class="content-box"><h3 class="h3">Project Management </h3>
 		<p class="p">Become a certified Project management professional and land lucrative roles in IT, manufacturing, and other exciting industries with the best training from Edoxi.</p>
@@ -246,7 +246,7 @@
 		</a>
 		</li>
 		<li>
-	<a href="courses">
+	<a href="category/accounting-courses-in-dubai">
 	<div class="icon-box"><img src="assets/images/finance-icon.svg" width="29" height="29" alt="finance-icon" class="img"></div>
 			<div class="content-box"><h3 class="h3">Finance &amp; Accounting</h3>
 		<p class="p">Get hands-on training in the finance & accounting profession which covers banking, accounting, finance management, bookkeeping, corporate finance and more.</p>
@@ -255,7 +255,7 @@
 		</li>
 		
 		<li>
-	<a href="courses">
+	<a href="category/designing-courses-in-dubai">
 	<div class="icon-box"><img src="assets/images/graphics-videos-icon.svg" width="29" height="30" alt="graphics-videos-icon" class="img"></div>
 			<div class="content-box"><h3 class="h3">Graphics & Videos</h3>
 		<p class="p">Gain the fundamental skills needed to be a graphic designer and learn everything you need to know to work in interface design, motion graphics, and editorial design. </p>
@@ -273,7 +273,7 @@
 </li>
 		
 <li>
-<a href="courses">
+<a href="softskills-courses">
 <div class="icon-box"><img src="assets/images/softskills-icon.svg" width="26" height="30" alt="web-development-icon" class="img"></div>
 <div class="content-box"><h3 class="h3">Softskills</h3>
 <p class="p">Learn and improve effective soft skills management and build the soft skills you need to stand out and take your career to the next level.</p>
@@ -418,7 +418,7 @@
 <div class="lists">
 <ul>
 <li class="box">
-<div class="count">1000+</div>
+<div class="count">4000+</div>
 <div class="description">Students Certified</div>
 </li>
 <li class="box">
@@ -426,7 +426,7 @@
 <div class="description">Courses To Select</div>
 </li>
 <li class="box">
-<div class="count">2000+</div>
+<div class="count">50000+</div>
 <div class="description">Hours Completed</div>
 </li>
 <li class="box">
