@@ -122,7 +122,7 @@ if (phonenumbervalue=='') {
 
 // Ajax starts here
 
-
+document.getElementById("course-enquiry-form").submit();
 
 }
 
