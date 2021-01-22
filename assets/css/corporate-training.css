@@ -230,8 +230,8 @@
 .calender-resources {}
 .calender-resources > .container {transform: initial !important;}
 .calender-resources .resource-box h2:after {margin-left: 0;}
-.calender-resources .list-block .items {background:#f7f7f7;padding: 2.5rem;}
-.calender-resources .list-block .items p {min-height: 2.5rem;}
+.calender-resources .list-block .items {background:#f7f7f7;padding: 2.5rem;text-align: c;}
+.calender-resources .list-block .items p:first-of-type {min-height: 2.5rem;}
 .calender-resources .list-block .items .btn-wrapper {display:inline-block;}
 .calender-resources .list-block .items .btn {height:55px;padding-left: 1rem;padding-right: 1rem;}
 
@@ -246,6 +246,29 @@
 .trainers .list-block .items .details .topic {font-size:.8rem;text-align:center;width:60%}
 .trainers .list-block .items .photo-wrapper {background:#f1f1f1;display: flex;justify-content: center;align-items: flex-end;padding-top: 2rem;}
 .trainers .list-block .items .photo-wrapper img {height:220px;width:auto;}
+
+
+
+.corporate-trainers .swiper-slide .photo-wrapper {background: #f9f9f9;text-align: center;display: flex;justify-content: center;padding-top: 2rem;}
+.corporate-trainers .swiper-slide .photo-wrapper img {width: 12rem;}
+.corporate-trainers .swiper-slide {/* background: #f9f9f9; */}
+.corporate-trainers .swiper-slide .details {text-align: center;background: #fff;margin-top: .75rem;}
+.corporate-trainers .swiper-slide .details .name {margin-bottom: 0;color: #ff5f3b;font-weight: 500;font-size: .95rem;}
+.corporate-trainers .swiper-slide .details .topic {margin-bottom: 0;}
+.corporate-trainers .corporate-trainers-pagination {text-align: center;margin-top: 2rem;}
+.corporate-trainers .corporate-trainers-pagination .swiper-pagination-bullet {margin-left: 5px;margin-right: 5px;    background: #C5C5C5;}
+.corporate-trainers .corporate-trainers-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {background: #0652a4;}
+
+@media only screen and (min-width:1200px) {
+.trainers {padding-bottom:5rem !important;}	
+.corporate-trainers .corporate-trainers-pagination {padding-top:2rem;}
+}
+
+
+
+
+
+
 
 .learning-quote {background:#f1f1f1;}
 .learning-quote {padding-top:2rem;}
@@ -326,6 +349,7 @@
 .drop-query .col1 {display:flex;flex-direction:column;justify-content:flex-end;align-items: flex-end;}
 .drop-query .col1 .h2 {line-height:1.15;}
 .drop-query .col2 .title {padding-left: 0 !important;line-height: initial !important;height: initial !important;padding-top: .5rem;padding-bottom: .5rem;}
+.drop-query .form-btn-wrapper {background:#fff;}
 .drop-query .corporate-query-form {flex-direction:column;background-color: #fff !important;}
 .drop-query .corporate-query-form .input-container input {background:#f0f0f0;}
 .drop-query .corporate-query-form .btn-wrapper {margin-top:0;padding-top:0;margin-bottom: 0;text-align: left;}

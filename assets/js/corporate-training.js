@@ -74,7 +74,7 @@ breakpoints: {
           spaceBetween: 5,
         },								
         768: {
-          slidesPerView: 5,
+          slidesPerView: 4,
           spaceBetween: 5,
         },
         1024: {
@@ -84,6 +84,51 @@ breakpoints: {
       }		
 
 });
+
+
+/* Swiper Slider : Corporate Trainers */
+var swiper6 = new Swiper('.corporate-trainers', {
+    loop: true,
+    speed: 1000,
+ autoplay: {
+    delay: 1300,
+    disableOnInteraction: false,
+  },
+navigation: {
+	nextEl: '.corporate-trainers-button-next1',
+	prevEl: '.corporate-trainers-button-prev1',
+},		
+	fade: {
+	  crossFade: true
+	},
+pagination: {
+    el: '.corporate-trainers-pagination',
+    type: 'bullets',
+	clickable: true,
+  },
+breakpoints: {
+       300: {
+          slidesPerView: 1,
+          spaceBetween: 5,
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },								
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 5,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 5,
+        },
+      }		
+
+});
+
+
+
 
 /* Swiper Slider : Students Review */
 var swiper4 = new Swiper('.students-review-slider', {

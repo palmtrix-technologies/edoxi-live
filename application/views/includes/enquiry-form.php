@@ -1,3 +1,4 @@
+<div class="form-btn-wrapper">
 <form id="efform" action="<?=base_url();?>send-enquiry" method="post" class="form-container">
 <div class="input-container">
 <input type="text" class="efinput" name="name" placeholder="Name" id="efname" required="required">
@@ -29,6 +30,9 @@
 									
 </form>
 <p class="btn-wrapper"><input type="submit" onClick="validationef();" name="efsubmit" value="Submit" id="submit" class="btn yellow-bg"></p>
+</div>
+
+
 <script>
 function validationef() {
 

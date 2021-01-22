@@ -276,8 +276,9 @@ valued, neither will your customers</p>
 <section class="section-fluid trainers">
 <div class="container" data-aos="fade-up" data-aos-duration="700">
 <h2 class="h2 text-center">Our Industry <span class="orange-text">Leading Trainers</span></h2>
-<div class="list-block xs1 sm3">
-<div class="items">
+<div class="swiper-container corporate-trainers">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
 <div class="photo-wrapper">
 <img src="assets/images/rupam-bhattacharjee.webp"  width="230" height="320" alt="faculty1" class="img">
 </div>
@@ -286,7 +287,7 @@ valued, neither will your customers</p>
 <p class="topic">Data Analytics Trainer</p>
 </div>
 </div>
-<div class="items">
+<div class="swiper-slide">
 <div class="photo-wrapper">
 <img src="assets/images/tasnym-suhail-siddiqui.webp" width="230" height="320" alt="faculty2" class="img">
 </div>
@@ -295,7 +296,7 @@ valued, neither will your customers</p>
 <p class="topic">Communication Specialist</p>
 </div>
 </div>
-<div class="items">
+<div class="swiper-slide">
 <div class="photo-wrapper">
 <img src="assets/images/daljeet-kaur.webp" width="230" height="320" alt="faculty3" class="img">
 </div>
@@ -304,7 +305,7 @@ valued, neither will your customers</p>
 <p class="topic">Soft Skills Trainer</p>
 </div>
 </div>
-<div class="items">
+<div class="swiper-slide">
 <div class="photo-wrapper">
 <img src="assets/images/viswanathan-ag.webp" width="230" height="320" alt="faculty1" class="img">
 </div>
@@ -313,7 +314,7 @@ valued, neither will your customers</p>
 <p class="topic">Sr. IT Trainer</p>
 </div>
 </div>
-<div class="items">
+<div class="swiper-slide">
 <div class="photo-wrapper">
 <img src="assets/images/shahista-tabassum.webp" width="230" height="320" alt="faculty4" class="img">
 </div>
@@ -322,7 +323,7 @@ valued, neither will your customers</p>
 <p class="topic">Technical Trainer</p>
 </div>
 </div>
-<div class="items">
+<div class="swiper-slide">
 <div class="photo-wrapper">
 <img src="assets/images/rahul-kumar.webp" width="230" height="320" alt="faculty1" class="img">
 </div>
@@ -331,7 +332,7 @@ valued, neither will your customers</p>
 <p class="topic">Vertualisation &amp; Cyber Security Trainer</p>
 </div>
 </div>
-<div class="items">
+<div class="swiper-slide">
 <div class="photo-wrapper">
 <img src="assets/images/shaheen.webp" width="230" height="320" alt="faculty1" class="img">
 </div>
@@ -340,7 +341,7 @@ valued, neither will your customers</p>
 <p class="topic">AutoDesk & Bently Product Trainer</p>
 </div>
 </div>
-<div class="items">
+<div class="swiper-slide">
 <div class="photo-wrapper">
 <img src="assets/images/bhagya-azariah.webp" width="230" height="320" alt="faculty5" class="img">
 </div>
@@ -349,7 +350,7 @@ valued, neither will your customers</p>
 <p class="topic">Corporate Communication Trainer</p>
 </div>
 </div>
-<div class="items">
+<div class="swiper-slide">
 <div class="photo-wrapper">
 <img src="assets/images/navpreet-jhingan.webp" width="230" height="320" alt="faculty5" class="img">
 </div>
@@ -358,7 +359,8 @@ valued, neither will your customers</p>
 <p class="topic">Sr. SAP Trainer</p>
 </div>
 </div>
-
+</div>
+<div class="corporate-trainers-pagination"></div>
 </div>
 </div>
 </section>
@@ -406,9 +408,6 @@ valued, neither will your customers</p>
 </div>
 <div class="swiper-slide"> 
 <img src="assets/images/atkins-logo.svg" width="80" height="17" alt="atkins" class="img">
-</div>
-<div class="swiper-slide"> 
-<img src="assets/images/kinolt-logo.svg" width="163" height="50" alt="kinolt" class="img">
 </div>
 <div class="swiper-slide"> 
 <img src="assets/images/kinolt-logo.svg" width="163" height="50" alt="kinolt" class="img">
