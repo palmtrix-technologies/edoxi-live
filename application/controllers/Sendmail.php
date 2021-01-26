@@ -121,8 +121,8 @@ public function sendEmail($email,$subject,$message,$attched_file)
             'Email' =>$email,
             'Course_Name' => $Course_Name,
             'Description' =>$message,
-            'Company_name' => $comapny,
-            'Added_datetime'=>$date
+            'Company_name' => $comapny
+           
         );  
         $result= $this->mainmodel->add_enquiry_log($data2);
      
