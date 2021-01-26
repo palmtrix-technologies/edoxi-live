@@ -149,8 +149,9 @@ if($sections->Classname!="Normal")
 </div>
 </section>
 </div>
+<?php 
 
-<?php  if(isset($faq)&&count($faq)>0){ 
+/*if(isset($faq)&&count($faq)>0){ 
     echo '<script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -221,6 +222,7 @@ echo '<script type="application/ld+json">
     }
   }
 }
- </script>';?>
+ </script>';
+ */?>
 
 <?php include('includes/footer.php') ?>
