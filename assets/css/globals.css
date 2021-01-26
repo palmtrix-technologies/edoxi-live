@@ -124,6 +124,9 @@ section .container {}
   color: #666;
 }
 
+.form-btn-wrapper {padding: 1.95rem;background: #527bd3;border-bottom-left-radius: .35rem;border-bottom-right-radius: .35rem;}
+.form-btn-wrapper .btn-wrapper {margin-bottom:0 !important}
+
 input, select {font-size: .75rem;border:none;border-radius:.25rem;color: #666;max-width:100%;width: 100%;height: 2.75rem;line-height: 2.75rem;text-indent: .30rem;border: 1px solid #cdcdcd;}
 textarea {border:1px solid #cdcdcd;width:100%;border-radius:.25rem;padding:.70rem;font-family: inherit;color: #666;font-size: .75rem;margin-bottom: 0;line-height: normal;}
 
@@ -882,14 +885,15 @@ transform:rotate(180deg);
 
 
 /* Course Enquiry Box */
-.course-enquiry-box {margin-bottom:1rem;}
+.course-enquiry-box {margin-bottom:1rem;background: #fff;/* padding-bottom: .5rem; */border-radius: .5rem;}
 .course-enquiry-box input, .course-enquiry-box select {border:none;}
-.course-enquiry-box .form-container {background-color: #527bd3;padding: 1.2rem;border-radius: .35rem;}
+.course-enquiry-box .form-container {background-color: #527bd3;/* padding: 1.2rem; */border-radius: .35rem;padding-bottom: 0;}
 .course-enquiry-box .title {color: #0652a4;font-weight:600;font-size:1rem;text-align: center;}
+.course-enquiry-box .btn-wrapper {text-align:left;/* padding-left:1.25rem; */}
 
 @media only screen and (min-width:1200px) {
 .course-enquiry-box {margin-bottom:2rem;/* width: 30rem; */}	
-.course-enquiry-box .form-container {padding:2rem;}
+.course-enquiry-box .form-container {/* padding:2rem; */}
 .course-enquiry-box .title {font-size:1.25rem;margin-bottom:1rem;}
 }
 

@@ -1,5 +1,5 @@
+<div class="form-btn-wrapper">
 <form id="course-enquiry-form" action="<?=base_url();?>send-enquiry" method="post" class="form-container corporate-query-form">
-
 <div class="input-container"><input type="text" class="cqinput" name="name" placeholder="Name" id="cqname" required="required">
 <div class='validation'>Please enter the Name</div>
 <div class='validation'>Numbers not allowed in Name Field</div>
@@ -27,10 +27,9 @@
 <textarea name="message" id="message" class="cqinput" cols="30" rows="10" placeholder="Message/Course"></textarea>
 <div class='validation'>Please enter your queries  </div>
 </div>
-	
 </form>
 <p class="btn-wrapper"><input type="submit" onClick="validationcq();" name="efsubmit" value="Submit" id="submit" class="btn orange-bg"></p>
-
+</div>
 <script>
 function validationcq() {
 
