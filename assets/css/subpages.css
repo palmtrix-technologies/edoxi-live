@@ -920,7 +920,7 @@
 .accreditations-page-items .box {flex-direction:row;}	
 .accreditations-page-items .box {flex-direction:row;padding: 4rem;}  
 .accreditations-page-items .box .col1 {width:15%}
-.accreditations-page-items .box .col1 .img {width:6rem;height:auto;max-height:3rem}
+.accreditations-page-items .box .col1 .img {width:6rem;height:auto;}
 .accreditations-page-items .box .col2 {width:85%}
 }
 
