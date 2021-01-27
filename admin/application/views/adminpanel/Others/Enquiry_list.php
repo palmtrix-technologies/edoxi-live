@@ -99,7 +99,12 @@
         <?php foreach($enq_data as $datas){?>
             <tr>
 
-                <td><?=$datas->EnqTime;?></td>
+                <td><?php 
+               $date = new DateTime($datas->EnqTime, new DateTimeZone('Asia/Calcutta'));
+               
+               $date->setTimezone(new DateTimeZone('Asia/Dubai'));
+               echo $date->format('Y-m-d H:i:s') . "\n";
+                ?></td>
                 <td><?=$datas->Enquiry;?></td>
                 <td><?=$datas->Name;?></td>
                 <td><?=$datas->Mobile;?></td>

@@ -104,6 +104,8 @@ public function sendEmail($email,$subject,$message,$attched_file)
 
     public function Sendenquirymail()
     {
+        $usersTimezone = 'Asia/Dubai';
+        $date = new DateTime( 'now', new DateTimeZone($usersTimezone) );
         $name=$_POST['name'];
         $email=$_POST['email'];
         $code=$_POST['countrycode'];
@@ -120,8 +122,10 @@ public function sendEmail($email,$subject,$message,$attched_file)
             'Course_Name' => $Course_Name,
             'Description' =>$message,
             'Company_name' => $comapny
+           
         );  
         $result= $this->mainmodel->add_enquiry_log($data2);
+     
         $messages = '
             <table style="border: solid black 1px;" cellpadding="10">
                 <tr>
@@ -146,10 +150,11 @@ public function sendEmail($email,$subject,$message,$attched_file)
                 <th>Company name </th><th>'.$comapny.'</th>
                 </tr>
                 <tr>
-                <th>Enquiry Date time </th><th>'.date("Y-m-d h:i:sa").'</th>
+                <th>Enquiry Date time </th><th>'.$date->format("Y-m-d h:i:sa").'</th>
                 </tr>
             </table>';
-        $this->sendEmail_withoutattachment("New Enquiry -".$type,$messages);
+           
+        $this->sendEmail_withoutattachment($name,"New Enquiry -".$type,$messages);
         $result["Searchdata"] = $this->mainmodel->GetAllcourse_forsearch();
         $result["header_menus"] = $this->mainmodel->display_header_menu();
         $result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
@@ -184,7 +189,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
             
     }
 
-    public function sendEmail_withoutattachment($subject,$message)
+    public function sendEmail_withoutattachment($name,$subject,$message)
     {
 
        
@@ -204,7 +209,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
 
           $this->load->library('email', $config);
           $this->email->set_newline("\r\n");
-          $this->email->from('enquiry@edoxitraining.com');
+          $this->email->from($name."<".$email.">");
           $this->email->to('info@edoxitraining.com');
           $this->email->subject($subject);
           $this->email->message($message);
