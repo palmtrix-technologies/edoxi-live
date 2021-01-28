@@ -72,10 +72,10 @@ public function sendEmail($email,$subject,$message,$attched_file)
 
     $config = Array(
       'protocol' => 'mail',
-      'smtp_host' => 'mail.palmtrix.app',
-      'smtp_port' => 587,
-      'smtp_user' => 'demo@palmtrix.app', 
-      'smtp_pass' => '#38Palmtrix', 
+    //   'smtp_host' => 'mail.palmtrix.app',
+    //   'smtp_port' => 587,
+    //   'smtp_user' => 'demo@palmtrix.app', 
+    //   'smtp_pass' => '#38Palmtrix', 
       'mailtype' => 'html',
       'charset' => 'iso-8859-1',
       'wordwrap' => TRUE
@@ -154,7 +154,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
                 </tr>
             </table>';
            
-        $this->sendEmail_withoutattachment($name,"New Enquiry -".$type,$messages);
+        $this->sendEmail_withoutattachment($name,$name."|New enquiry | ".$type,$messages);
         $result["Searchdata"] = $this->mainmodel->GetAllcourse_forsearch();
         $result["header_menus"] = $this->mainmodel->display_header_menu();
         $result["footer_menus"] = $this->mainmodel->get_footer_subcaregory();
@@ -197,10 +197,10 @@ public function sendEmail($email,$subject,$message,$attched_file)
 
     $config = Array(
       'protocol' => 'mail',
-      'smtp_host' => 'mail.edoxitraining.com',
-      'smtp_port' => 587,
-      'smtp_user' => 'info@edoxitraining.com', 
-      'smtp_pass' => '#38Palmtrix', 
+    //   'smtp_host' => 'mail.edoxitraining.com',
+    //   'smtp_port' => 587,
+    //   'smtp_user' => 'info@edoxitraining.com', 
+    //   'smtp_pass' => '#38Palmtrix', 
       'mailtype' => 'html',
       'charset' => 'iso-8859-1',
       'wordwrap' => TRUE
@@ -209,8 +209,8 @@ public function sendEmail($email,$subject,$message,$attched_file)
 
           $this->load->library('email', $config);
           $this->email->set_newline("\r\n");
-          $this->email->from($name."<".$email.">");
-          $this->email->to('info@edoxitraining.com');
+          $this->email->from("info@edoxitraining.com",$name);
+          $this->email->to('info@edoxitraining.com,hakkempalakkal@gmail.com');
           $this->email->subject($subject);
           $this->email->message($message);
           if($this->email->send())
@@ -218,10 +218,15 @@ public function sendEmail($email,$subject,$message,$attched_file)
              $messge="white paper mail sent successfully please check your mail attachment";
             //     // $this->session->keep_flashdata('Message',$messge);
             //     redirect($_POST['actual_link']);
+            
+            
+        
         }
          else
         {
          show_error($this->email->print_debugger());
+         
+       
         }
 
     }
