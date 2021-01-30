@@ -140,7 +140,7 @@ class Others extends MY_Controller
 	function all_enquries(){
 		
 		$data["enq_types"]=$this->Others_model->get_all_enq_type();
-		$data["enq_data"]=$this->Others_model->get_enq_bydateandtype(strtotime('-7 day', date("Y/m/d")),date("Y/m/d"),'All');
+		$data["enq_data"]=$this->Others_model->get_enq_bydateandtype(date('Y/m/d', strtotime('-7 days')),date("Y/m/d"),'All');
 		$this->load->view('admin/includes/_header');
 		$this->load->view('adminpanel/Others/Enquiry_list',$data);
 		$this->load->view('admin/includes/_footer');

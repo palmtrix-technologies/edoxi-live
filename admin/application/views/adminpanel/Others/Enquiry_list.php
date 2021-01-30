@@ -162,6 +162,7 @@ $(document).ready(function() {
     $('.exampletab').DataTable( {
         dom: 'Bfrtip',
         "pageLength": 100,
+        "order": [[ 0, "desc" ]],
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
