@@ -36,7 +36,7 @@ class main_model extends CI_Model{
 	public function GetAllcourse_forsearch()
 	{
           
-        $sql="select `course_name` as name from tbl_course";
+        $sql="select `course_name` as name,course_slug as slug from tbl_course";
 		
 		
 		$query = $this->db->query($sql);

@@ -202,9 +202,9 @@ function Get(url) {
 // {"name":"Java"}
 // ];
 
-courses1.map(function(element, index) {
-  courses1[index] = element.name;
-});
+// courses1.map(function(element, index) {
+//   courses1[index] = element.name;
+// });
 
 // variables
 var search_input1 = document.querySelector(".search-input1");
@@ -220,7 +220,7 @@ function autocomplete1(val1) {
 
   for (i = 0; i < courses1.length; i++) {
 
-    if(courses1[i].toLowerCase().includes(val1))
+    if(courses1[i].name.toLowerCase().includes(val1))
     {
       courses_returned1.push(courses1[i]);
     }
@@ -245,9 +245,9 @@ search_input1.onkeyup = function(e) {
     for (i = 0; i < courses_show1.length; i++) {
       autocomplete_results1.innerHTML +=
         "<li id=" +
-        courses_show1[i] +
+        courses_show1[i].slug +
         ' class="list-item">' +
-        courses_show1[i] +
+        courses_show1[i].name +
         "</li>";
     }
     autocomplete_results1.style.display = "block";
@@ -263,7 +263,8 @@ document.getElementById("autocomplete-results1").addEventListener("click", funct
     // If it was a list item
     if (e.target && e.target.nodeName == "LI") {
       // List item found!  Output the value!
-      console.log(e.target.innerHTML);
+      console.log(e.target.id);
+      window.location.href =baseurl+e.target.id;
       search_input1.value = e.target.innerHTML;
       autocomplete_results1.innerHTML = null; //empty the value
     }

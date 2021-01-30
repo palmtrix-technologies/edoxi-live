@@ -94,7 +94,9 @@ else{
 ?>
 
 <script type="text/javascript">
-var courses1 = <?php echo json_encode($Searchdata); ?>;
+var courses1 = <?php echo json_encode($Searchdata); ?>
+
+var baseurl="<?=base_url();?>";
 </script>
 
 <!-- Font Preload -->
