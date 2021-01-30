@@ -293,9 +293,9 @@ search_input2.onkeyup = function(e) {
     for (i = 0; i < courses_show1.length; i++) {
       autocomplete_results2.innerHTML +=
         "<li id=" +
-        courses_show1[i] +
+        courses_show1[i].name +
         ' class="list-item">' +
-        courses_show1[i] +
+        courses_show1[i].name +
         "</li>";
     }
     autocomplete_results2.style.display = "block";
@@ -341,9 +341,9 @@ search_input3.onkeyup = function(e) {
     for (i = 0; i < courses_show1.length; i++) {
       autocomplete_results3.innerHTML +=
         "<li id=" +
-        courses_show1[i] +
+        courses_show1[i].name +
         ' class="list-item">' +
-        courses_show1[i] +
+        courses_show1[i].name +
         "</li>";
     }
     autocomplete_results3.style.display = "block";
