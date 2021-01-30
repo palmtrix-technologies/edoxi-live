@@ -34,6 +34,7 @@ let inputs = document.getElementsByClassName('rdinput');
 for(i=0;i<inputs.length;i++) {
 if(inputs[i].value===''){
 inputs[i].nextElementSibling.classList.add('show');
+return false;
 }	
 	else {
 	inputs[i].nextElementSibling.classList.remove('show');
