@@ -18,7 +18,11 @@
 <div class='validation'>Please enter a valid Phone number</div>
 </div>
 <div class="input-container course-search-box">
-<input type="text"  placeholder="Search for a Course" name="interest" class="search-field efinput search-input3">
+<input type="text"  placeholder="Search for a Course" name="interest" class="search-field efinput search-input3"  value="
+<?php if(isset($coursedata))
+{
+echo $coursedata->course_name;} ?>
+">
 <div class='validation'>Please select a course from the list  </div>
 <ul id="autocomplete-results3" class="autocomplete-results">
 </ul>
