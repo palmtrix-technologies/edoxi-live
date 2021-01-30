@@ -209,7 +209,7 @@ public function sendEmail($email,$subject,$message,$attched_file)
 
           $this->load->library('email', $config);
           $this->email->set_newline("\r\n");
-          $this->email->from("info@edoxitraining.com",$name);
+          $this->email->from("enquiry@edoxitraining.com",$name);
           $this->email->to('info@edoxitraining.com,hakkempalakkal@gmail.com');
           $this->email->subject($subject);
           $this->email->message($message);
