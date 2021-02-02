@@ -1,3 +1,4 @@
+<div class="form-btn-wrapper">
 <form id="csform" action="<?=base_url();?>send-enquiry" method="post" class="form-container">
 <div class="input-container"><input type="text" class="csinput" name="name" placeholder="Name" id="csname" required="required">
 <div class='validation'>Please enter the Name</div>
@@ -25,8 +26,10 @@
 <textarea name="message" class="csinput" id="message" cols="30" rows="10" placeholder="Message/Course"></textarea>
 <div class='validation'>Please enter your queries  </div>
 </div>
-	</form>
-    <p class="btn-wrapper"><input type="submit" onClick="validationcs();" name="efsubmit" value="Submit" id="submit" class="btn orange-bg"></p>
+</form>
+<p class="btn-wrapper"><input type="submit" onClick="validationcs();" name="efsubmit" value="Submit" id="submit" class="btn orange-bg"></p>
+</div>
+
 
 
 <script>
